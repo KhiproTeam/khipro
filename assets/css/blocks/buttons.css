@@ -5,38 +5,68 @@
   justify-content: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
-  font-weight: 500;
-  border-radius: var(--radius-md);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
   transition: all var(--transition-base);
   text-decoration: none;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Primary Button */
 .btn--primary {
   background-color: var(--color-primary);
   color: #ffffff;
+  box-shadow: 0 4px 14px rgba(144, 67, 71, 0.3);
 }
 
 .btn--primary:hover {
   background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(144, 67, 71, 0.4);
 }
 
+.btn--primary:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(144, 67, 71, 0.3);
+}
+
+/* Default/Outline Button */
 .btn--default {
   background-color: transparent;
   border: 2px solid var(--color-border-medium);
   color: var(--color-text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .btn--default:hover {
-  border-color: var(--color-text-primary);
-  background-color: var(--color-bg-2);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+  background-color: rgba(144, 67, 71, 0.08);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(144, 67, 71, 0.15);
 }
 
+.btn--default:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Large Button Size */
 .btn--lg {
   padding: var(--space-md) var(--space-xl);
   font-size: 1.125rem;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.01em;
 }

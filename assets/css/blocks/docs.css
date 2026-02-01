@@ -210,6 +210,7 @@
 .doc-article__content pre {
   position: relative;
   padding-top: calc(var(--space-md) + 2.5rem);
+  padding-bottom: 0;  /* Remove extra bottom space */
 }
 
 /* Wrapper for scrollable code - button stays above this */
@@ -218,8 +219,15 @@
   top: var(--space-md);
   left: var(--space-md);
   right: var(--space-md);
-  bottom: var(--space-md);
+  /* No bottom - let height match code content exactly */
   overflow-x: auto;
+  /* Hide scrollbar but keep functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.doc-article__content .code-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Edge */
 }
 
 .code-copy-btn {

@@ -83,6 +83,13 @@
   .hero__image img { width: 24rem; height: 24rem; }
 }
 
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+}
+
 .hero__content > .btn { margin-top: var(--space-xl); }
 
 /* FAQ Section */
