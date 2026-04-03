@@ -11,13 +11,13 @@
 {{/* Auto-detect submodule folder from current page path */}}
 {{- $currentSection := .CurrentSection.RelPermalink -}}
 {{- $currentRel := .RelPermalink -}}
-{{- if or (eq $currentSection "/khipro/quickstart/") (eq $currentRel "/khipro/quickstart/") -}}
+{{- if or (eq $currentSection "/quickstart/") (eq $currentRel "/quickstart/") -}}
   {{- $isSubmodule = true -}}
   {{- $contentFile = "content/quickstart/README.md" -}}
-{{- else if or (eq $currentSection "/khipro/installation/") (eq $currentRel "/khipro/installation/") -}}
+{{- else if or (eq $currentSection "/installation/") (eq $currentRel "/installation/") -}}
   {{- $isSubmodule = true -}}
   {{- $contentFile = "content/installation/README.md" -}}
-{{- else if or (eq $currentSection "/khipro/documentation/") (eq $currentRel "/khipro/documentation/") -}}
+{{- else if or (eq $currentSection "/documentation/") (eq $currentRel "/documentation/") -}}
   {{- $isSubmodule = true -}}
   {{- $contentFile = "content/documentation/README.md" -}}
 {{- end -}}
