@@ -1,7 +1,7 @@
 /* Section Layout */
 
 .section {
-  padding-block: var(--space-2xl);
+  padding-block: var(--space-xl);
 }
 
 .section--alt {

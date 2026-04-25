@@ -146,22 +146,25 @@ const FAQAccordion = (() => {
     faqItems.forEach((button) => {
       button.addEventListener("click", () => {
         const item = button.closest(".faq-item");
-        const answer = item.querySelector(".faq-answer");
-        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        const isOpen = item.classList.contains("open");
 
         // Close all other items
-        document.querySelectorAll(".faq-item").forEach((otherItem) => {
+        document.querySelectorAll(".faq-item.open").forEach((otherItem) => {
           if (otherItem !== item) {
             const otherButton = otherItem.querySelector(".faq-question");
-            const otherAnswer = otherItem.querySelector(".faq-answer");
+            otherItem.classList.remove("open");
             otherButton.setAttribute("aria-expanded", "false");
-            otherAnswer.hidden = true;
           }
         });
 
         // Toggle current item
-        button.setAttribute("aria-expanded", !isExpanded);
-        answer.hidden = isExpanded;
+        if (isOpen) {
+          item.classList.remove("open");
+          button.setAttribute("aria-expanded", "false");
+        } else {
+          item.classList.add("open");
+          button.setAttribute("aria-expanded", "true");
+        }
       });
     });
   };

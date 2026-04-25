@@ -12,11 +12,11 @@
             <div class="hero__content">
                 <h1 class="hero__title">{{ $hero.main_heading }}</h1>
                 <div class="hero__description">
-                    {{ range $hero.description_paragraphs }}
-                    <p>{{ . | markdownify }}</p>
+                    {{ range $index, $para := $hero.description_paragraphs }}
+                    <p class="{{ if eq $index 0 }}hero__problem-box{{ end }}">{{ $para | markdownify }}</p>
                     {{ end }}
                 </div>
-                <div class="hero__actions">
+                <div class="hero__actions hero__actions--mobile">
                     {{ range $hero.buttons }}
                     <a href="{{ .link | relURL }}" class="btn {{ if .primary }}btn--primary{{ else }}btn--default{{ end }} btn--lg">
                         {{ .text }}
@@ -26,6 +26,13 @@
             </div>
             <div class="hero__image">
                 <img src="{{ $hero.hero_image | relURL }}" alt="{{ $hero.hero_image_alt }}" loading="lazy">
+                <div class="hero__actions hero__actions--desktop">
+                    {{ range $hero.buttons }}
+                    <a href="{{ .link | relURL }}" class="btn {{ if .primary }}btn--primary{{ else }}btn--default{{ end }} btn--lg">
+                        {{ .text }}
+                    </a>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>
@@ -41,33 +48,31 @@
             {{ end }}
         </header>
 
-        <div class="faq-list">
-            <!-- Left Column -->
+        <div class="faq-grid">
             <div class="faq-column">
                 {{ range $index, $item := $faq.faqs }}
                 {{ if lt $index 4 }}
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span>{{ .question }}</span>
-                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        <span class="faq-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
-                    <div class="faq-answer" hidden>
+                    <div class="faq-answer">
                         <p>{{ .answer | markdownify }}</p>
                     </div>
                 </div>
                 {{ end }}
                 {{ end }}
             </div>
-            <!-- Right Column -->
             <div class="faq-column">
                 {{ range $index, $item := $faq.faqs }}
                 {{ if ge $index 4 }}
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span>{{ .question }}</span>
-                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        <span class="faq-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
-                    <div class="faq-answer" hidden>
+                    <div class="faq-answer">
                         <p>{{ .answer | markdownify }}</p>
                     </div>
                 </div>
@@ -112,17 +117,17 @@
                     id="panel-{{ $platform.name }}"
                     aria-labelledby="tab-{{ $platform.name }}"
                     {{ if ne $index 0 }}hidden{{ end }}>
-                    <div class="grid--2">
+                    <div class="install-grid">
                         {{ range $platform.methods }}
-                        <div class="card">
-                            <div class="method-header">
-                                <div class="icon-box icon-box--lg">
+                        <div class="install-card">
+                            <div class="install-card__header">
+                                <div class="install-card__icon">
                                     <i class="{{ .icon }}" aria-hidden="true"></i>
                                 </div>
-                                <h3 class="method-title">{{ .title }}</h3>
+                                <h3 class="install-card__title">{{ .title }}</h3>
                             </div>
-                            <p class="method-description">{{ .description | markdownify }}</p>
-                            <a href="{{ .link_url | relURL }}" class="btn btn--primary">{{ .link_text }}</a>
+                            <p class="install-card__body">{{ .description | markdownify }}</p>
+                            <a href="{{ .link_url | relURL }}" class="install-card__btn">{{ .link_text }}</a>
                         </div>
                         {{ end }}
                     </div>
@@ -143,26 +148,24 @@
             {{ end }}
         </header>
 
-        <div class="grid--2">
-            {{ range $repositories.repositories }}
-            <div class="card repository-card">
-                <div class="repository-header-row">
-                    <div class="repository-icon">
-                        <i class="{{ .icon }}" aria-hidden="true"></i>
-                    </div>
-                    <div class="repository-header-content">
-                        <div class="repository-title-row">
-                            <h3 class="repository-name">{{ .name }}</h3>
-                            <a href="{{ .repository_link }}" target="_blank" rel="noopener noreferrer" class="repository-arrow" aria-label="View {{ .name }} on GitHub">
-                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                            </a>
+        <div class="repo-grid">
+            {{ range $index, $item := $repositories.repositories }}
+            <div class="repo-card {{ if eq $index 4 }}repo-card--wide{{ end }}">
+                <div class="repo-card__header">
+                    <div class="repo-card__left">
+                        <div class="repo-card__avatar">
+                            <i class="{{ .icon }}" aria-hidden="true"></i>
                         </div>
-                        <p class="repository-maintainer">
-                            মেইনটেইনার: <a href="{{ .maintainer_link }}" target="_blank" rel="noopener noreferrer" class="link">{{ .maintainer_name }}</a>
-                        </p>
+                        <div>
+                            <div class="repo-card__name">{{ .name }}</div>
+                            <div class="repo-card__maintainer">মেইনটেইনার: <a href="{{ .maintainer_link }}" target="_blank" rel="noopener noreferrer" class="repo-card__maintainer-link">{{ .maintainer_name }}</a></div>
+                        </div>
                     </div>
+                    <a href="{{ .repository_link }}" target="_blank" rel="noopener noreferrer" class="repo-card__ext" aria-label="View {{ .name }} on GitHub">
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <p class="repository-description">{{ .description | markdownify }}</p>
+                <p class="repo-card__desc">{{ .description | markdownify }}</p>
             </div>
             {{ end }}
         </div>

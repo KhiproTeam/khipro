@@ -65,8 +65,8 @@
 
 /* Large Button Size */
 .btn--lg {
-  padding: var(--space-md) var(--space-xl);
-  font-size: 1.125rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
   border-radius: var(--radius-sm);
   letter-spacing: 0.01em;
 }
