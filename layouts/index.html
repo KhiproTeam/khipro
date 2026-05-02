@@ -89,7 +89,7 @@
         <header class="section-header">
             <h2 class="section-header__title">{{ $installation.title }}</h2>
             {{ with $installation.sub_heading }}
-            <p class="section-header__description">{{ . }}</p>
+            <div class="section-header__description section-header__description--md">{{ . | markdownify }}</div>
             {{ end }}
         </header>
 
@@ -119,6 +119,7 @@
                     {{ if ne $index 0 }}hidden{{ end }}>
                     <div class="install-grid">
                         {{ range $platform.methods }}
+                        {{- $docHref := relURL .link_url -}}
                         <div class="install-card">
                             <div class="install-card__header">
                                 <div class="install-card__icon">
@@ -127,7 +128,9 @@
                                 <h3 class="install-card__title">{{ .title }}</h3>
                             </div>
                             <p class="install-card__body">{{ .description | markdownify }}</p>
-                            <a href="{{ .link_url | relURL }}" class="install-card__btn">{{ .link_text }}</a>
+                            <div class="install-card__actions">
+                                <a href="{{ $docHref }}" class="install-card__btn">{{ .link_text }}</a>
+                            </div>
                         </div>
                         {{ end }}
                     </div>
@@ -150,7 +153,7 @@
 
         <div class="repo-grid">
             {{ range $index, $item := $repositories.repositories }}
-            <div class="repo-card {{ if eq $index 4 }}repo-card--wide{{ end }}">
+            <div class="repo-card{{ if eq $index 0 }} repo-card--full{{ end }}">
                 <div class="repo-card__header">
                     <div class="repo-card__left">
                         <div class="repo-card__avatar">

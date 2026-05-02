@@ -34,7 +34,7 @@
 }
 
 .hero__title {
-  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-size: clamp(2rem, 4.5vw, 2.75rem);
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.75;
   color: var(--color-text-secondary);
 }
@@ -55,7 +55,7 @@
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 0.75rem 1rem 0.75rem 1.1rem;
   color: var(--color-text-primary);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -215,7 +215,7 @@
   justify-content: space-between;
   gap: 0.5rem;
   padding: 1rem 1.2rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-text-primary);
   text-align: left;
@@ -244,7 +244,7 @@
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  font-size: 0.87rem;
+  font-size: 1rem;
   line-height: 1.82;
   color: var(--color-text-secondary);
   padding: 0 1.2rem;
@@ -279,18 +279,12 @@
   margin-bottom: var(--space-xl);
 }
 
-@media (max-width: 480px) {
-  .tab-buttons {
-    gap: var(--space-md);
-  }
-}
-
 .tab-button {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
   padding: 0.7rem 1.25rem;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--color-text-secondary);
   background: none;
@@ -303,8 +297,34 @@
 
 @media (min-width: 640px) {
   .tab-button {
-    font-size: 1rem;
+    font-size: 1.05rem;
     padding: 0.7rem 2rem;
+  }
+}
+
+@media (max-width: 639px) {
+  /* তিন ট্যাব এক লাইনে — কম প্যাডিং/গ্যাপ, সমান ফ্লেক্স ভাগ (বেস .tab-button এর পরে যাতে ওভাররাইড লাগে) */
+  .tab-buttons {
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    gap: 0.15rem;
+    margin-inline: calc(-1 * var(--space-xs));
+    padding-inline: var(--space-xs);
+    margin-bottom: var(--space-lg);
+  }
+
+  .tab-button {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: center;
+    padding: 0.45rem 0.15rem;
+    gap: clamp(0.12rem, 1vw, 0.35rem);
+    font-size: clamp(0.7rem, 3vw, 0.88rem);
+  }
+
+  .tab-button i {
+    flex-shrink: 0;
+    font-size: clamp(0.75rem, 3.25vw, 0.95rem);
   }
 }
 
@@ -376,13 +396,13 @@
 }
 
 .install-card__title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-text-primary);
 }
 
 .install-card__body {
-  font-size: 0.86rem;
+  font-size: 1rem;
   line-height: 1.78;
   color: var(--color-text-secondary);
   margin-bottom: 1.2rem;
@@ -397,7 +417,7 @@
   color: #ffffff;
   border: none;
   border-radius: 7px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   box-shadow: 0 3px 10px rgba(144, 67, 71, 0.22);
@@ -407,6 +427,21 @@
 .install-card__btn:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-1px);
+}
+
+.install-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.section-header__description--md > p {
+  margin: 0;
+}
+
+.section-header__description--md > p + p {
+  margin-top: 0.65rem;
 }
 
 /* Repositories Section */
@@ -432,7 +467,16 @@
 
 @media (min-width: 640px) {
   .repo-grid {
-    grid-template-columns: repeat(2, 1fr);
+    /* সারি ১: প্রথম রিপো সম্পূর্ণ প্রস্থ; সারি ২: পরের দুটো উপাদান দুটি কলামে */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+
+  .repo-card--full {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
   }
 }
 
@@ -456,8 +500,8 @@
   transform: translateY(-3px);
 }
 
-.repo-card--wide {
-  grid-column: 1 / -1;
+.repo-card:not(.repo-card--full) {
+  min-width: 0;
 }
 
 .repo-card__header {
@@ -487,7 +531,7 @@
 }
 
 .repo-card__name {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-primary);
   font-family: monospace;
@@ -495,7 +539,7 @@
 }
 
 .repo-card__maintainer {
-  font-size: 0.73rem;
+  font-size: 0.8rem;
   color: var(--color-text-secondary);
 }
 
@@ -533,7 +577,7 @@
 }
 
 .repo-card__desc {
-  font-size: 0.86rem;
+  font-size: 1rem;
   line-height: 1.75;
   color: var(--color-text-secondary);
 }
@@ -554,16 +598,26 @@
 .community-links {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-lg);
-  max-width: 24rem;
+  gap: var(--space-sm);
+  width: min(100%, 76rem);
+  max-width: 100%;
   margin-inline: auto;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+  padding-inline: var(--space-xs);
 }
 
 @media (min-width: 640px) {
   .community-links {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 64rem;
+    gap: clamp(0.35rem, 1.25vw, 0.85rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 920px) {
+  /* এক সারিতে চারটি কার্ড — জায়গা কম হলে নিচের ব্রেকপয়েন্টে ২×২ */
+  .community-links {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(0.4rem, 1.35vw, 0.95rem);
   }
 }
 
@@ -572,8 +626,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.75rem;
-  padding: 1.6rem 1.4rem;
+  gap: 0.5rem;
+  min-width: 0;
+  padding: 1rem 0.65rem;
   border-radius: var(--radius-lg);
   text-decoration: none;
   background-color: var(--color-card-bg);
@@ -591,9 +646,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background-color: var(--color-card-bg);
   border: 1.5px solid var(--color-border-light);
   color: var(--color-primary);
@@ -601,20 +656,24 @@
 }
 
 .community-icon i {
-  font-size: 1.375rem;
+  font-size: 1.2rem;
 }
 
-.community-info { text-align: center; }
+.community-info {
+  text-align: center;
+  min-width: 0;
+}
 
 .community-name {
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 2.1vw, 1.05rem);
   font-weight: 700;
   color: var(--color-text-primary);
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0.125rem;
+  line-height: 1.35;
 }
 
 .community-description {
-  font-size: 0.84rem;
+  font-size: clamp(0.82rem, 1.85vw, 0.9375rem);
   color: var(--color-text-secondary);
-  line-height: 1.7;
+  line-height: 1.58;
 }

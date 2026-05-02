@@ -53,6 +53,9 @@
     {{ $css := $allCss | resources.Concat "css/main.css" }}
     {{ $css = $css | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    {{/* Chroma classes (requires markup.highlight.noClasses = false) */}}
+    {{ $syntaxChroma := resources.Get "css/syntax-chroma.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $syntaxChroma.RelPermalink }}">
     {{/* toc.css and docs.css included separately due to Hugo bug */}}
     {{ $tocCss := $toc | minify | fingerprint }}
     {{ $docsCss := $docs | minify | fingerprint }}

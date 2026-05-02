@@ -44,7 +44,6 @@
 .doc-article__content th,
 .doc-article__content table,
 .doc-article__content code,
-.doc-article__content pre,
 .doc-alert,
 .doc-alert__content,
 .doc-alert__content strong,
@@ -137,7 +136,7 @@
    ============================================ */
 
 .doc-article__type {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 600;
 }
 
@@ -200,7 +199,7 @@
    ============================================ */
 
 .doc-nav__label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 .doc-nav__title {
@@ -217,7 +216,7 @@
    ============================================ */
 
 .code-copy-btn {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 500;
 }
 

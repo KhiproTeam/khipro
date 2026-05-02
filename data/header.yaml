@@ -18,7 +18,7 @@ menu_items:
     url: "quickstart/"
     weight: 15
   - name: "ইনস্টলেশন"
-    url: "#installation"
+    url: "/installation/"
     weight: 20
   - name: "ডকুমেন্টেশন"
     url: "documentation/"

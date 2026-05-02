@@ -252,6 +252,10 @@ const DocsTOC = (() => {
       itemsArray.forEach((item, index) => {
         // Only process items that Hugo marked as having children
         if (item.classList.contains("doc-toc__item--has-children")) {
+          const pinnedExpand =
+            item.hasAttribute("data-toc-pinned-expanded") ||
+            item.classList.contains("doc-toc__item--pinned-expanded");
+
           // Resolve current item level
           let currentLevel = 1;
           for (let l = 1; l <= 6; l++) {
@@ -288,13 +292,25 @@ const DocsTOC = (() => {
           if (children.length > 0) {
             // Create children container
             const childrenContainer = document.createElement("div");
-            childrenContainer.className =
-              "doc-toc__children doc-toc__children--collapsed";
+            childrenContainer.className = pinnedExpand
+              ? "doc-toc__children doc-toc__children--expanded doc-toc__children--pinned"
+              : "doc-toc__children doc-toc__children--collapsed";
             childrenContainer.setAttribute("data-toc-children", "");
+
+            if (pinnedExpand) {
+              item.classList.add("doc-toc__item--expanded");
+              const pf = item.querySelector("[data-toc-folder] i");
+              if (pf) {
+                pf.classList.remove("fa-folder");
+                pf.classList.add("fa-folder-open");
+              }
+            }
 
             // Create a nested list for children
             const childList = document.createElement("ul");
-            childList.className = "doc-toc__list doc-toc__list--nested";
+            childList.className = pinnedExpand
+              ? "doc-toc__list doc-toc__list--nested doc-toc__list--under-pinned"
+              : "doc-toc__list doc-toc__list--nested";
             childList.setAttribute("role", "list");
 
             // Move children into the container
@@ -344,6 +360,13 @@ const DocsTOC = (() => {
     }
 
     toggleCollapse(item) {
+      if (
+        item.hasAttribute("data-toc-pinned-expanded") ||
+        item.classList.contains("doc-toc__item--pinned-expanded")
+      ) {
+        return;
+      }
+
       const children = item.querySelector("[data-toc-children]");
       const arrow = item.querySelector("[data-toc-arrow]");
       const folderIcon = item.querySelector("[data-toc-folder] i");
@@ -547,6 +570,13 @@ const DocsTOC = (() => {
     }
 
     collapseItem(item) {
+      if (
+        item.hasAttribute("data-toc-pinned-expanded") ||
+        item.classList.contains("doc-toc__item--pinned-expanded")
+      ) {
+        return;
+      }
+
       const children = item.querySelector("[data-toc-children]");
       const folderIcon = item.querySelector("[data-toc-folder] i");
 
@@ -878,25 +908,55 @@ const CodeCopyButton = (() => {
     }
   };
 
+  /** Chroma leaves whitespace-only text nodes inside display:flex wrappers; they flex-stretch and inflate <pre> height. */
+  const stripChromaFlexWhitespace = () => {
+    document.querySelectorAll(".doc-article__content pre code").forEach((code) => {
+      code.querySelectorAll("span[style]").forEach((span) => {
+        const styleAttr = span.getAttribute("style") || "";
+        if (!/display\s*:\s*flex/i.test(styleAttr)) return;
+        [...span.childNodes].forEach((node) => {
+          if (
+            node.nodeType === Node.TEXT_NODE &&
+            /^[\t\n\r \u00A0\uFEFF]*$/.test(node.textContent)
+          ) {
+            node.remove();
+          }
+        });
+      });
+    });
+  };
+
+  /** Host for the copy control: must stay outside the scrolling <pre> or it scrolls away horizontally. */
+  const getCodeCopyAnchor = (pre) => {
+    const parent = pre.parentElement;
+    if (parent && parent.classList.contains("highlight")) {
+      return parent;
+    }
+    if (parent && parent.classList.contains("doc-code-block-wrap")) {
+      return parent;
+    }
+    const wrap = document.createElement("div");
+    wrap.className = "doc-code-block-wrap";
+    parent.insertBefore(wrap, pre);
+    wrap.appendChild(pre);
+    return wrap;
+  };
+
   const createCopyButton = () => {
-    const codeBlocks = document.querySelectorAll(".doc-article__content pre");
+    const codeBlocks = document.querySelectorAll(".doc-article__content pre:has(code)");
 
     codeBlocks.forEach((pre) => {
-      // Skip if already has copy button
-      if (pre.querySelector(".code-copy-btn")) return;
+      const anchor = getCodeCopyAnchor(pre);
+      const misplaced = pre.querySelector(".code-copy-btn");
+      if (misplaced) {
+        anchor.appendChild(misplaced);
+        return;
+      }
+      if (anchor.querySelector(":scope > .code-copy-btn")) return;
 
       const code = pre.querySelector("code");
       if (!code) return;
 
-      // Create wrapper for scrollable code
-      const wrapper = document.createElement("div");
-      wrapper.className = "code-wrapper";
-
-      // Move code into wrapper
-      pre.insertBefore(wrapper, code);
-      wrapper.appendChild(code);
-
-      // Create copy button (outside wrapper, directly in pre)
       const button = document.createElement("button");
       button.className = "code-copy-btn";
       button.type = "button";
@@ -908,18 +968,20 @@ const CodeCopyButton = (() => {
         copyToClipboard(text, button);
       });
 
-      pre.appendChild(button);
+      anchor.appendChild(button);
     });
   };
 
   const init = () => {
     if (!document.querySelector(".doc-article__content")) return;
 
-    // Run on load
+    stripChromaFlexWhitespace();
     createCopyButton();
 
-    // Also run after a short delay to catch dynamically loaded content
-    setTimeout(createCopyButton, 500);
+    setTimeout(() => {
+      stripChromaFlexWhitespace();
+      createCopyButton();
+    }, 500);
   };
 
   return { init };

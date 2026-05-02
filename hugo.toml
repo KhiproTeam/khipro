@@ -16,6 +16,15 @@ disableKinds = ["sitemap"]
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  lineNos = false
+  lineNumbersInTable = false
+  # Inline styles bake `display:flex` on line wrappers (+ stray newlines flex-stretch badly). Use classes + stylesheet.
+  noClasses = false
+  style = "monokai"
+
 [markup.tableOfContents]
 startLevel = 2
 endLevel = 4

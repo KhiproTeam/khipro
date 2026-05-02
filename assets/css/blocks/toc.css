@@ -87,7 +87,7 @@
 }
 
 .doc-toc__title {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -259,6 +259,48 @@
 
 .doc-toc__children--expanded {
   max-height: 2000px;
+}
+
+/* Sole top-level branch: always-expanded (no collapse, no toggle chevron) */
+.doc-toc__pinned-slot {
+  display: inline-flex;
+  width: 1rem;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.doc-toc__children--pinned {
+  max-height: none;
+}
+
+.doc-toc__list--under-pinned {
+  margin-top: var(--space-xs);
+  padding-left: 0.45rem;
+  margin-left: 0.1rem;
+  border-left: 2px solid var(--color-border-light);
+}
+
+.doc-toc__nest-dot {
+  width: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-toc__nest-dot i {
+  font-size: 0.35rem;
+  opacity: 0.82;
+}
+
+.doc-toc__link--active .doc-toc__nest-dot,
+.doc-toc__link.active .doc-toc__nest-dot {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.doc-toc__link--active .doc-toc__nest-dot i,
+.doc-toc__link.active .doc-toc__nest-dot i {
+  opacity: 1;
 }
 
 /* TOC EMPTY STATE */

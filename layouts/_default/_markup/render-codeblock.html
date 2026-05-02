@@ -1,0 +1,8 @@
+{{- /* Collapse Chroma’s Pretty-print whitespace between consecutive </span> closers — otherwise those
+     gaps become sibling flex rows (.line { display:flex }) or extra empty lines inside white-space: pre. */ -}}
+{{- $result := transform.HighlightCodeBlock . }}
+{{- $html := printf "%s" $result.Wrapped }}
+{{- range seq 24 }}
+  {{- $html = replaceRE `</span>\s*</span>` `</span></span>` $html }}
+{{- end }}
+{{- $html | safeHTML }}

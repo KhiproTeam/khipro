@@ -24,6 +24,11 @@
     margin: 0 auto;
     padding: var(--space-xl);
   }
+
+  /* No outline to show (single heading / empty TOC) — article uses full width */
+  .doc-layout--no-toc {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* DOC MAIN (Content Area) */
@@ -169,13 +174,18 @@
 
 .doc-article__content a {
   color: var(--color-primary);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  text-decoration: underline;
+  text-decoration-color: rgba(144, 67, 71, 0.35);
+  text-underline-offset: 0.15em;
   transition: all var(--transition-fast);
 }
 
 .doc-article__content a:hover {
-  border-bottom-color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+}
+
+[data-theme="dark"] .doc-article__content a {
+  text-decoration-color: rgba(193, 101, 106, 0.4);
 }
 
 /* Current page link highlighting */
@@ -187,70 +197,216 @@
   background: var(--color-bg-2);
   padding: 0.125rem 0.5rem;
   border-radius: var(--radius-sm);
-  color: var(--color-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-light);
 }
 
-.doc-article__content pre {
-  background: #1a1a2e;
-  border-radius: var(--radius-lg);
-  padding: var(--space-md);
+/* Chroma .line defaults to display:flex — combined with stray Pretty-print newlines becomes
+   phantom flex rows + huge vertical stretch. Prefer block in article code blocks only. */
+.doc-article__content .highlight .chroma .line {
+  display: block !important;
+}
+
+/* Fallback when noClasses = true produced inline styles (older builds / cached HTML) */
+.doc-article__content pre code span[style*="display:flex"],
+.doc-article__content pre code span[style*="display: flex"] {
+  display: block !important;
+}
+
+.doc-article__content .highlight,
+.doc-article__content .doc-code-block-wrap {
+  position: relative;
+  margin: 0;
+}
+
+.doc-article__content .doc-code-block-wrap {
+  display: block;
+}
+
+/* Markdown fenced blocks: compact inset, copy clears text without huge top gutter */
+.doc-article__content pre:has(code) {
+  position: relative;
+  --doc-code-bg: #1e2030;
+  --doc-code-fg: #dce0ea;
+  --doc-code-keyword: #5ec8ea;
+  --doc-code-str: #e6c879;
+  --doc-code-accent: #e88990;
+  --doc-code-name: #9ed56f;
+  --doc-code-num: #c9b3f5;
+  --doc-code-comment: #7f8696;
+  --doc-code-error-fg: #ff8a84;
+  --doc-code-error-bg: rgba(196, 50, 50, 0.22);
+
+  background: var(--doc-code-bg) !important;
+  color: var(--doc-code-fg) !important;
+  border-radius: var(--radius-md);
   overflow-x: auto;
-  margin-bottom: var(--space-md);
-  border: 1px solid var(--color-border-light);
+  margin: 0 0 var(--space-sm);
+  border: 1px solid rgba(144, 67, 71, 0.28);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  tab-size: 4 !important;
+  -moz-tab-size: 4 !important;
+  -webkit-text-size-adjust: 100% !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  padding: 0.4rem 3.35rem 0.45rem 0.55rem !important;
+  padding-top: 1.6rem !important;
+}
+
+[data-theme="dark"] .doc-article__content pre:has(code),
+[data-actual-theme="dark"] .doc-article__content pre:has(code) {
+  border-color: rgba(193, 101, 106, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.doc-article__content pre.chroma,
+.doc-article__content pre.chroma code {
+  background-color: transparent !important;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+/* Chroma tokens (scoped) — hues aligned with docs surface + brand rose */
+.doc-article__content pre.chroma code {
+  color: var(--doc-code-fg) !important;
+}
+
+.doc-article__content pre.chroma .k,
+.doc-article__content pre.chroma .kc,
+.doc-article__content pre.chroma .kd,
+.doc-article__content pre.chroma .kp,
+.doc-article__content pre.chroma .kr,
+.doc-article__content pre.chroma .kt {
+  color: var(--doc-code-keyword) !important;
+}
+
+.doc-article__content pre.chroma .kn {
+  color: var(--doc-code-accent) !important;
+}
+
+.doc-article__content pre.chroma .o,
+.doc-article__content pre.chroma .ow,
+.doc-article__content pre.chroma .nt {
+  color: var(--doc-code-accent) !important;
+}
+
+.doc-article__content pre.chroma .l,
+.doc-article__content pre.chroma .ld,
+.doc-article__content pre.chroma .s,
+.doc-article__content pre.chroma .sa,
+.doc-article__content pre.chroma .sb,
+.doc-article__content pre.chroma .sc,
+.doc-article__content pre.chroma .dl,
+.doc-article__content pre.chroma .sd,
+.doc-article__content pre.chroma .s2,
+.doc-article__content pre.chroma .se,
+.doc-article__content pre.chroma .sh,
+.doc-article__content pre.chroma .si,
+.doc-article__content pre.chroma .sx,
+.doc-article__content pre.chroma .sr,
+.doc-article__content pre.chroma .s1,
+.doc-article__content pre.chroma .ss {
+  color: var(--doc-code-str) !important;
+}
+
+.doc-article__content pre.chroma .m,
+.doc-article__content pre.chroma .mb,
+.doc-article__content pre.chroma .mf,
+.doc-article__content pre.chroma .mh,
+.doc-article__content pre.chroma .mi,
+.doc-article__content pre.chroma .il,
+.doc-article__content pre.chroma .mo {
+  color: var(--doc-code-num) !important;
+}
+
+.doc-article__content pre.chroma .na,
+.doc-article__content pre.chroma .nc,
+.doc-article__content pre.chroma .no,
+.doc-article__content pre.chroma .nd,
+.doc-article__content pre.chroma .ne,
+.doc-article__content pre.chroma .nx,
+.doc-article__content pre.chroma .nf,
+.doc-article__content pre.chroma .fm {
+  color: var(--doc-code-name) !important;
+}
+
+.doc-article__content pre.chroma .c,
+.doc-article__content pre.chroma .ch,
+.doc-article__content pre.chroma .cm,
+.doc-article__content pre.chroma .c1,
+.doc-article__content pre.chroma .cs,
+.doc-article__content pre.chroma .cp,
+.doc-article__content pre.chroma .cpf {
+  color: var(--doc-code-comment) !important;
+}
+
+.doc-article__content pre.chroma .err {
+  color: var(--doc-code-error-fg) !important;
+  background-color: var(--doc-code-error-bg) !important;
+}
+
+.doc-article__content pre.chroma .gd {
+  color: var(--doc-code-accent) !important;
+}
+
+.doc-article__content pre.chroma .gi {
+  color: var(--doc-code-name) !important;
+}
+
+.doc-article__content pre.chroma .gu {
+  color: var(--doc-code-comment) !important;
 }
 
 .doc-article__content pre code {
   background: transparent;
   padding: 0;
-  color: #e0e0e0;
+  margin: 0;
+  color: inherit;
+  font-family: inherit !important;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  white-space: pre;
+  overflow-wrap: normal;
 }
 
 /* CODE COPY BUTTON */
 
-.doc-article__content pre {
-  position: relative;
-  padding-top: calc(var(--space-md) + 2.5rem);
-  padding-bottom: 0;  /* Remove extra bottom space */
-}
-
-/* Wrapper for scrollable code - button stays above this */
-.doc-article__content .code-wrapper {
-  position: absolute;
-  top: var(--space-md);
-  left: var(--space-md);
-  right: var(--space-md);
-  /* No bottom - let height match code content exactly */
-  overflow-x: auto;
-  /* Hide scrollbar but keep functionality */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-}
-
-.doc-article__content .code-wrapper::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Edge */
-}
-
 .code-copy-btn {
   position: absolute;
-  top: var(--space-sm);
-  right: var(--space-sm);
-  z-index: 1;
-  display: flex;
+  top: 0.3rem;
+  right: 0.3rem;
+  z-index: 2;
+  pointer-events: auto;
+  display: inline-flex;
   align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-xs) var(--space-sm);
-  background-color: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: var(--radius-md);
-  color: rgba(255, 255, 255, 0.9);
+  gap: 0.2rem;
+  padding: 0.2rem 0.45rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.88);
   cursor: pointer;
   transition: all var(--transition-fast);
   opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.doc-article__content .code-copy-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.doc-article__content .code-copy-btn i {
+  font-size: 0.8rem;
 }
 
 .code-copy-btn:hover {
-  background-color: rgba(255, 255, 255, 0.35);
-  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.32);
   color: #ffffff;
 }
 
