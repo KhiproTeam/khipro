@@ -1,4 +1,4 @@
-# [ক্ষিপ্র কিবোর্ড ওয়েবসাইট (Khipro Keyboard Website)](https://khipro.khiproteam.pro.bd/)
+# [ক্ষিপ্র কিবোর্ড ওয়েবসাইট (Khipro Keyboard Website)](https://khipro.khiproteam.com/)
 
 [FOR ENGLISH click here](README.me)
 
