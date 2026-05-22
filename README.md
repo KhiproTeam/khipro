@@ -1,4 +1,4 @@
-# [ক্ষিপ্র কিবোর্ড ওয়েবসাইট (Khipro Keyboard Website)](https://khipro.khiproteam.pro.bd/)
+# [ক্ষিপ্র কিবোর্ড ওয়েবসাইট (Khipro Keyboard Website)](https://khipro.khiproteam.com/)
 
 [FOR ENGLISH click here](README.me)
 
@@ -16,7 +16,7 @@
 
 ## কমিউনিটি (Community)
 ক্ষিপ্র একটি ওপেন-সোর্স এবং কমিউনিটি-চালিত প্রকল্প। আমরা আপনাদের সকল প্রশ্ন, নতুন ধারণা এবং অবদানকে স্বাগত জানাই। আলোচনা করতে, সহায়তা পেতে এবং আমাদের এই উদ্যোগকে এগিয়ে নিতে আমাদের কমিউনিটিতে যোগ দিন!
-কমিউনিটি লিংক: https://khipro.khiproteam.pro.bd/#community
+কমিউনিটি লিংক: https://khipro.khiproteam.com/#community
 
 ## লাইসেন্স (License)
-এই প্রকল্পটি ওপেন-সোর্স। এর স্বত্ব সংরক্ষিত নয় (All rights are not reserved); এটি একটি মুক্ত সফটওয়্যার (Free Software)। [ক্ষিপ্র-র সোর্স কোড দেখুন](https://khipro.khiproteam.pro.bd/#repositories)
+এই প্রকল্পটি ওপেন-সোর্স। এর স্বত্ব সংরক্ষিত নয় (All rights are not reserved); এটি একটি মুক্ত সফটওয়্যার (Free Software)। [ক্ষিপ্র-র সোর্স কোড দেখুন](https://khipro.khiproteam.com/#repositories)
