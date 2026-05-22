@@ -1,6 +1,6 @@
 # [ক্ষিপ্র কিবোর্ড ওয়েবসাইট (Khipro Keyboard Website)](https://khipro.khiproteam.com/)
 
-[FOR ENGLISH click here](README.me)
+[FOR ENGLISH click here](README.en.md)
 
 
 ## এই ওয়েবসাইটে আপনি যা পাবেন
