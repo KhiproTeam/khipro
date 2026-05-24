@@ -1,4 +1,4 @@
-# [Khipro Keyboard Website (ক্ষিপ্র কিবোর্ড ওয়েবসাইট)](https://khipro.khiproteam.pro.bd/)
+# [Khipro Keyboard Website (ক্ষিপ্র কিবোর্ড ওয়েবসাইট)](https://khipro.khiproteam.com/)
 
 [বাংলায় পড়তে ক্লিক করুন](README.md)
 
@@ -12,11 +12,11 @@
 
 
 ## Installation
-For detailed installation instructions for Linux, Windows, and Android, please visit the [Installation Section on our Website](https://khipro.khiproteam.pro.bd/#installation).
+For detailed installation instructions for Linux, Windows, and Android, please visit the [Installation Section on our Website](https://khipro.khiproteam.com/#installation).
 
 ## Community
 Khipro is an open-source, community-driven project. We welcome all questions, ideas, and contributions. Join our community to discuss, get support, and help us grow!
-Community link: https://khipro.khiproteam.pro.bd/#community
+Community link: https://khipro.khiproteam.com/#community
 
 ## License
-This project is open-source. All rights are not reserved, it is a free software. [View Khipro Source Code](https://khipro.khiproteam.pro.bd/#repositories)
+This project is open-source. All rights are not reserved, it is a free software. [View Khipro Source Code](https://khipro.khiproteam.com/#repositories)
