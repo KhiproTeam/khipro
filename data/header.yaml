@@ -11,7 +11,7 @@ mobile_menu_icon: "fas fa-bars"
 mobile_menu_aria_label: "মেনু"
 
 menu_items:
-  - name: "এফ-এ-কিউ"
+  - name: "FAQ"
     url: "#faq"
     weight: 10
   - name: "কুইকস্টার্ট"
