@@ -25,12 +25,20 @@
     grid-template-columns: 3fr 2fr;
     gap: 2.5rem;
   }
-  .hero__content { order: 1; }
-  .hero__image { order: 2; }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__image {
+    order: 2;
+  }
 }
 
 @media (max-width: 767px) {
-  .hero__image { order: -1; }
+  .hero__image {
+    order: -1;
+  }
 }
 
 .hero__title {
@@ -76,15 +84,24 @@
 }
 
 @media (min-width: 400px) {
-  .hero__image img { width: 13rem; height: 13rem; }
+  .hero__image img {
+    width: 13rem;
+    height: 13rem;
+  }
 }
 
 @media (min-width: 640px) {
-  .hero__image img { width: 15rem; height: 15rem; }
+  .hero__image img {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .hero__image img { width: 17rem; height: 17rem; }
+  .hero__image img {
+    width: 17rem;
+    height: 17rem;
+  }
 }
 
 .hero__actions {
@@ -101,11 +118,18 @@
 }
 
 @media (min-width: 768px) {
-  .hero__actions--mobile { display: none; }
-  .hero__actions--desktop { display: flex; }
+  .hero__actions--mobile {
+    display: none;
+  }
+
+  .hero__actions--desktop {
+    display: flex;
+  }
 }
 
-.hero__content > .btn { margin-top: var(--space-xl); }
+.hero__content>.btn {
+  margin-top: var(--space-xl);
+}
 
 /* FAQ Section */
 #faq {
@@ -163,7 +187,7 @@
     flex-direction: row;
   }
 
-  .faq-grid > .faq-column {
+  .faq-grid>.faq-column {
     flex: 1;
   }
 }
@@ -174,12 +198,12 @@
   gap: 1rem;
 }
 
-.faq-column + .faq-column {
+.faq-column+.faq-column {
   margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
-  .faq-column + .faq-column {
+  .faq-column+.faq-column {
     margin-top: 0;
   }
 }
@@ -198,8 +222,14 @@
 }
 
 .faq-item.open .faq-answer {
-  max-height: 220px;
+  max-height: 500px;
   padding: 0 1.2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .faq-item.open .faq-answer {
+    max-height: 300px;
+  }
 }
 
 .faq-item.open .faq-chevron {
@@ -303,6 +333,7 @@
 }
 
 @media (max-width: 639px) {
+
   /* তিন ট্যাব এক লাইনে — কম প্যাডিং/গ্যাপ, সমান ফ্লেক্স ভাগ (বেস .tab-button এর পরে যাতে ওভাররাইড লাগে) */
   .tab-buttons {
     flex-wrap: nowrap;
@@ -337,13 +368,21 @@
   border-bottom-color: var(--color-primary);
 }
 
-.tab-panels { min-height: 20rem; }
+.tab-panels {
+  min-height: 20rem;
+}
 
-.tab-panel { display: none; }
+.tab-panel {
+  display: none;
+}
 
-.tab-panel--active { display: block; }
+.tab-panel--active {
+  display: block;
+}
 
-.tab-panel[hidden] { display: none; }
+.tab-panel[hidden] {
+  display: none;
+}
 
 .install-grid {
   display: grid;
@@ -436,11 +475,11 @@
   gap: 0.65rem;
 }
 
-.section-header__description--md > p {
+.section-header__description--md>p {
   margin: 0;
 }
 
-.section-header__description--md > p + p {
+.section-header__description--md>p+p {
   margin-top: 0.65rem;
 }
 
@@ -614,6 +653,7 @@
 }
 
 @media (min-width: 920px) {
+
   /* এক সারিতে চারটি কার্ড — জায়গা কম হলে নিচের ব্রেকপয়েন্টে ২×২ */
   .community-links {
     grid-template-columns: repeat(4, minmax(0, 1fr));
