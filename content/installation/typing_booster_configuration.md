@@ -52,4 +52,4 @@ weight: 30
 
 ![](img/image7.png)
 
-কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
+কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khipro.khiproteam.com/#community

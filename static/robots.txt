@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khiproteam.github.io/khipro/sitemap.xml
+Sitemap: https://khipro.khiproteam.com/sitemap.xml
