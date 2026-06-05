@@ -1,0 +1,120 @@
+/* FAQ Section */
+
+#faq {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  #faq {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .faq-grid {
+    flex-direction: row;
+  }
+
+  .faq-grid>.faq-column {
+    flex: 1;
+  }
+}
+
+.faq-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-column+.faq-column {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .faq-column+.faq-column {
+    margin-top: 0;
+  }
+}
+
+.faq-item {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.faq-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 18px rgba(144, 67, 71, 0.07);
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  padding: 0 1.2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .faq-item.open .faq-answer {
+    max-height: 300px;
+  }
+}
+
+.faq-item.open .faq-chevron {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transform: rotate(180deg);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-align: left;
+  transition: color var(--transition-base);
+}
+
+.faq-question:hover {
+  color: var(--color-primary);
+}
+
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 0.625rem;
+  transition: transform var(--transition-base), background-color var(--transition-base), color var(--transition-base);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.82;
+  color: var(--color-text-secondary);
+  padding: 0 1.2rem;
+  transition: max-height var(--transition-base) ease, padding var(--transition-base) ease;
+}

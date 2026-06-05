@@ -37,10 +37,13 @@
     {{- $rawContent | markdownify -}}
   {{- end -}}
 {{- else -}}
-  <div class="alert" style="padding: 1rem; background-color: #fef3c7; border-radius: 0.5rem; margin-bottom: 1rem;">
-    <strong>সতর্কতা:</strong> ফাইল পাওয়া যায়নি।
-    <br><br>
-    গিট সাবমোডিউল আপডেট করুন:
-    <pre><code>git submodule update --init --recursive</code></pre>
+  <div class="doc-alert doc-alert--warning">
+    <div class="doc-alert__header">
+      <div class="doc-alert__icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="doc-alert__content"><strong>সতর্কতা:</strong></div>
+    </div>
+    <div class="doc-alert__content">
+      <p>ফাইল পাওয়া যায়নি।</p>
+    </div>
   </div>
 {{- end -}}

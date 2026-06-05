@@ -153,7 +153,7 @@
 
         <div class="repo-grid">
             {{ range $index, $item := $repositories.repositories }}
-            <div class="repo-card{{ if eq $index 0 }} repo-card--full{{ end }}">
+            <a href="{{ .repository_link }}" target="_blank" rel="noopener noreferrer" class="repo-card{{ if eq $index 0 }} repo-card--full{{ end }}" aria-label="{{ .name }}">
                 <div class="repo-card__header">
                     <div class="repo-card__left">
                         <div class="repo-card__avatar">
@@ -161,15 +161,12 @@
                         </div>
                         <div>
                             <div class="repo-card__name">{{ .name }}</div>
-                            <div class="repo-card__maintainer">মেইনটেইনার: <a href="{{ .maintainer_link }}" target="_blank" rel="noopener noreferrer" class="repo-card__maintainer-link">{{ .maintainer_name }}</a></div>
+                            <div class="repo-card__maintainer">মেইনটেইনার: {{ .maintainer_name }}</div>
                         </div>
                     </div>
-                    <a href="{{ .repository_link }}" target="_blank" rel="noopener noreferrer" class="repo-card__ext" aria-label="View {{ .name }} on GitHub">
-                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                    </a>
                 </div>
                 <p class="repo-card__desc">{{ .description | markdownify }}</p>
-            </div>
+            </a>
             {{ end }}
         </div>
     </div>

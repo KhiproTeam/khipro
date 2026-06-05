@@ -23,21 +23,30 @@
     {{ $sections := resources.Get "css/blocks/sections.css" }}
     {{ $header := resources.Get "css/blocks/header.css" }}
     {{ $footer := resources.Get "css/blocks/footer.css" }}
-    {{ $home := resources.Get "css/blocks/home.css" }}
+    {{ $hero := resources.Get "css/blocks/hero.css" }}
+    {{ $faq := resources.Get "css/blocks/faq.css" }}
+    {{ $install := resources.Get "css/blocks/install.css" }}
+    {{ $repos := resources.Get "css/blocks/repos.css" }}
+    {{ $community := resources.Get "css/blocks/community.css" }}
     {{ $notFound := resources.Get "css/blocks/not-found.css" }}
-    {{ $css := slice $composition $base $typography $utilities $skipLink $buttons $cards $sections $header $footer $home
-    $notFound | resources.Concat "css/main.css" }}
+    {{ $cssSlice1 := slice $composition $base $typography $utilities $skipLink $buttons $cards $sections $header $footer }}
+    {{ $cssSlice2 := slice $hero $faq $install $repos $community $notFound }}
+    {{ $css := $cssSlice1 | append $cssSlice2 | resources.Concat "css/main.css" }}
     {{ $css = $css | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/solid.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/brands.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/solid.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/brands.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ "img/khipro-favicon.ico" | relURL }}" type="image/x-icon">
 
     <style>
-        /* Full height 404 page styles */
         body {
             min-height: 100vh;
             display: flex;
@@ -56,13 +65,11 @@
             margin: 0;
         }
         .not-found__content {
-            text-align: center;
             width: 100%;
             max-width: 100%;
             margin: 0;
         }
     </style>
-
 </head>
 
 <body>
@@ -90,7 +97,7 @@
                     </a>
 
                     <!-- GitHub Link -->
-                    <p class="not-found__github" style="margin-top: var(--space-lg);">
+                    <p class="not-found__github">
                         যদি আপনি মনে করেন এটি একটি ত্রুটি, অনুগ্রহ করে আমাদের
                         <a href="https://github.com/orgs/KhiproTeam/discussions" target="_blank" rel="noopener noreferrer" class="link">
                             GitHub Discussions

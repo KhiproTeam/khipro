@@ -136,6 +136,7 @@
 .doc-toc__link:hover {
   background-color: var(--color-bg-2);
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 .doc-toc__link--active,

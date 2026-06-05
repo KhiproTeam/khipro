@@ -63,12 +63,14 @@
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
   font-size: 1.25rem;
   transition: color var(--transition-fast);
 }
 
 .nav__home:hover {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .nav__menu {
@@ -81,6 +83,7 @@
 
 .nav__link {
   color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
   font-weight: 500;
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-md);
@@ -101,6 +104,7 @@
 
 .nav__link:hover {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .nav__link:hover::after {
@@ -228,6 +232,7 @@ html[data-theme="system"] .theme-toggle [data-theme-icon-system] {
   padding: var(--space-md) var(--space-lg);
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-md);
@@ -238,4 +243,5 @@ html[data-theme="system"] .theme-toggle [data-theme-icon-system] {
 .mobile-menu__link:hover {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
 }

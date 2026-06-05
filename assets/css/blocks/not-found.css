@@ -68,3 +68,7 @@
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
+
+.not-found__github {
+  margin-top: var(--space-lg);
+}

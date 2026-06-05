@@ -10,13 +10,13 @@
 {{- $currentRel := .RelPermalink -}}
 {{- if or (eq $currentSection "/quickstart/") (eq $currentRel "/quickstart/") -}}
   {{- $isSubmodule = true -}}
-  {{- $contentFile = "content/quickstart/README.md" -}}
+  {{- $contentFile = "content/quickstart/_index.md" -}}
 {{- else if or (eq $currentSection "/installation/") (eq $currentRel "/installation/") -}}
   {{- $isSubmodule = true -}}
   {{- $contentFile = printf "content/%s" .File.Path -}}
 {{- else if or (eq $currentSection "/documentation/") (eq $currentRel "/documentation/") -}}
   {{- $isSubmodule = true -}}
-  {{- $contentFile = "content/documentation/README.md" -}}
+  {{- $contentFile = "content/documentation/_index.md" -}}
 {{- end -}}
 
 {{- if $isSubmodule -}}
@@ -222,8 +222,8 @@
                     </span>
                     {{- end -}}
                   {{- else if $isH1 -}}
-                    <span class="doc-toc__folder" data-toc-folder>
-                      <i class="fas fa-folder"></i>
+                    <span class="doc-toc__file" data-toc-icon>
+                      <i class="fas fa-file-alt"></i>
                     </span>
                   {{- else if $nestUnderPinned -}}
                     <span class="doc-toc__nest-dot">

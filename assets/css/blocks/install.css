@@ -1,0 +1,192 @@
+/* Installation Section */
+
+#installation {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  #installation {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.installation-tabs {
+  max-width: 56rem;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--space-xl);
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.7rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -1px;
+  transition: color var(--transition-base), border-color var(--transition-base);
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .tab-button {
+    font-size: 1.05rem;
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .tab-buttons {
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    gap: 0.15rem;
+    margin-inline: calc(-1 * var(--space-xs));
+    padding-inline: var(--space-xs);
+    margin-bottom: var(--space-lg);
+  }
+
+  .tab-button {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: center;
+    padding: 0.45rem 0.15rem;
+    gap: clamp(0.12rem, 1vw, 0.35rem);
+    font-size: clamp(0.7rem, 3vw, 0.88rem);
+  }
+
+  .tab-button i {
+    flex-shrink: 0;
+    font-size: clamp(0.75rem, 3.25vw, 0.95rem);
+  }
+}
+
+.tab-button:hover {
+  color: var(--color-primary);
+}
+
+.tab-button--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.tab-panels {
+  min-height: 20rem;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel--active {
+  display: block;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+.install-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .install-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.install-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.install-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 6px 14px rgba(144, 67, 71, 0.1);
+  transform: translateY(-2px);
+}
+
+.install-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.install-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--color-icon-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(144, 67, 71, 0.22);
+}
+
+.install-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.install-card__body {
+  font-size: 1rem;
+  line-height: 1.78;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.2rem;
+}
+
+.install-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.52rem 1.1rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(144, 67, 71, 0.22);
+  transition: background-color var(--transition-base), transform var(--transition-fast);
+}
+
+.install-card__btn:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.install-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+}

@@ -1,0 +1,250 @@
+/* Document Code Blocks */
+
+/* Markdown fenced blocks */
+.doc-article__content .highlight,
+.doc-article__content .doc-code-block-wrap {
+  position: relative;
+  margin: 0;
+}
+
+.doc-article__content .doc-code-block-wrap {
+  display: block;
+}
+
+/* Chroma .line defaults to display:flex fix */
+.doc-article__content .highlight .chroma .line {
+  display: block !important;
+}
+
+/* Fallback for inline styles */
+.doc-article__content pre code span[style*="display:flex"],
+.doc-article__content pre code span[style*="display: flex"] {
+  display: block !important;
+}
+
+.doc-article__content pre:has(code) {
+  position: relative;
+  --doc-code-bg: #ffffff;
+  --doc-code-fg: #1e2030;
+  --doc-code-keyword: #0060a8;
+  --doc-code-str: #7a5b00;
+  --doc-code-accent: #b02550;
+  --doc-code-name: #2e7d32;
+  --doc-code-num: #6a3cb5;
+  --doc-code-comment: #6a737d;
+  --doc-code-error-fg: #cc3333;
+  --doc-code-error-bg: rgba(204, 51, 51, 0.12);
+
+  background: var(--doc-code-bg) !important;
+  color: var(--doc-code-fg) !important;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin: 0 0 var(--space-sm);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-family: "JetBrains Mono", "July", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  tab-size: 4 !important;
+  -moz-tab-size: 4 !important;
+  -webkit-text-size-adjust: 100% !important;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.04);
+
+  padding: 0.4rem 3.35rem 0.45rem 0.55rem !important;
+  padding-top: 1.6rem !important;
+}
+
+[data-theme="dark"] .doc-article__content pre:has(code),
+[data-actual-theme="dark"] .doc-article__content pre:has(code) {
+  --doc-code-bg: #1e2030;
+  --doc-code-fg: #dce0ea;
+  --doc-code-keyword: #5ec8ea;
+  --doc-code-str: #e6c879;
+  --doc-code-accent: #e88990;
+  --doc-code-name: #9ed56f;
+  --doc-code-num: #c9b3f5;
+  --doc-code-comment: #7f8696;
+  --doc-code-error-fg: #ff8a84;
+  --doc-code-error-bg: rgba(196, 50, 50, 0.22);
+  border-color: rgba(193, 101, 106, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.doc-article__content pre.chroma,
+.doc-article__content pre.chroma code {
+  background-color: transparent !important;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+/* Chroma tokens */
+.doc-article__content pre.chroma code {
+  color: var(--doc-code-fg) !important;
+}
+
+.doc-article__content pre.chroma .k,
+.doc-article__content pre.chroma .kc,
+.doc-article__content pre.chroma .kd,
+.doc-article__content pre.chroma .kp,
+.doc-article__content pre.chroma .kr,
+.doc-article__content pre.chroma .kt {
+  color: var(--doc-code-keyword) !important;
+}
+
+.doc-article__content pre.chroma .kn {
+  color: var(--doc-code-accent) !important;
+}
+
+.doc-article__content pre.chroma .o,
+.doc-article__content pre.chroma .ow,
+.doc-article__content pre.chroma .nt {
+  color: var(--doc-code-accent) !important;
+}
+
+.doc-article__content pre.chroma .l,
+.doc-article__content pre.chroma .ld,
+.doc-article__content pre.chroma .s,
+.doc-article__content pre.chroma .sa,
+.doc-article__content pre.chroma .sb,
+.doc-article__content pre.chroma .sc,
+.doc-article__content pre.chroma .dl,
+.doc-article__content pre.chroma .sd,
+.doc-article__content pre.chroma .s2,
+.doc-article__content pre.chroma .se,
+.doc-article__content pre.chroma .sh,
+.doc-article__content pre.chroma .si,
+.doc-article__content pre.chroma .sx,
+.doc-article__content pre.chroma .sr,
+.doc-article__content pre.chroma .s1,
+.doc-article__content pre.chroma .ss {
+  color: var(--doc-code-str) !important;
+}
+
+.doc-article__content pre.chroma .m,
+.doc-article__content pre.chroma .mb,
+.doc-article__content pre.chroma .mf,
+.doc-article__content pre.chroma .mh,
+.doc-article__content pre.chroma .mi,
+.doc-article__content pre.chroma .il,
+.doc-article__content pre.chroma .mo {
+  color: var(--doc-code-num) !important;
+}
+
+.doc-article__content pre.chroma .na,
+.doc-article__content pre.chroma .nc,
+.doc-article__content pre.chroma .no,
+.doc-article__content pre.chroma .nd,
+.doc-article__content pre.chroma .ne,
+.doc-article__content pre.chroma .nx,
+.doc-article__content pre.chroma .nf,
+.doc-article__content pre.chroma .fm {
+  color: var(--doc-code-name) !important;
+}
+
+.doc-article__content pre.chroma .c,
+.doc-article__content pre.chroma .ch,
+.doc-article__content pre.chroma .cm,
+.doc-article__content pre.chroma .c1,
+.doc-article__content pre.chroma .cs,
+.doc-article__content pre.chroma .cp,
+.doc-article__content pre.chroma .cpf {
+  color: var(--doc-code-comment) !important;
+}
+
+.doc-article__content pre.chroma .err {
+  color: var(--doc-code-error-fg) !important;
+  background-color: var(--doc-code-error-bg) !important;
+}
+
+.doc-article__content pre.chroma .gd {
+  color: var(--doc-code-accent) !important;
+}
+
+.doc-article__content pre.chroma .gi {
+  color: var(--doc-code-name) !important;
+}
+
+.doc-article__content pre.chroma .gu {
+  color: var(--doc-code-comment) !important;
+}
+
+.doc-article__content pre code {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-family: inherit !important;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+/* Code Copy Button */
+.code-copy-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  z-index: 2;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.2rem 0.45rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Light mode copy button */
+.doc-article__content pre:has(code) .code-copy-btn {
+  background-color: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.doc-article__content pre:has(code) .code-copy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dark mode copy button (white colors for dark bg) */
+[data-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn,
+[data-actual-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+[data-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn:hover,
+[data-actual-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.32);
+  color: #ffffff;
+}
+
+.doc-article__content .code-copy-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.doc-article__content .code-copy-btn i {
+  font-size: 0.8rem;
+}
+
+.code-copy-btn:active {
+  transform: scale(0.95);
+}
+
+.code-copy-btn--copied {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.4) !important;
+  color: #10b981 !important;
+}

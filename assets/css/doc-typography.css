@@ -22,7 +22,6 @@
  */
 
 .doc-article__type,
-.doc-article__title,
 .doc-article__description,
 .doc-article__content,
 .doc-article__content p,
@@ -141,13 +140,14 @@
 }
 
 .doc-article__title {
+  font-family: 'Baloo Da 2', system-ui, -apple-system, sans-serif;
   font-size: clamp(1.75rem, 5vw, 2.5rem);
   font-weight: 800;
   line-height: 1.1;
 }
 
 .doc-article__description {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 /* ============================================
@@ -186,7 +186,7 @@
 
 .doc-alert__content strong {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .doc-alert__content p {

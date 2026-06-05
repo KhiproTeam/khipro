@@ -1,0 +1,33 @@
+/* Document Layout Grid */
+
+.doc-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  min-height: calc(100vh - 4rem);
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .doc-layout {
+    padding: var(--space-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .doc-layout {
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-xl);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+  }
+
+  .doc-layout--no-toc {
+    grid-template-columns: 1fr;
+  }
+}
+
+.doc-main {
+  min-width: 0;
+}

@@ -28,7 +28,7 @@
     <!-- External Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- CSS Pipeline: Concatenate, minify, and fingerprint all CSS files -->
@@ -42,24 +42,31 @@
     {{ $sections := resources.Get "css/blocks/sections.css" }}
     {{ $header := resources.Get "css/blocks/header.css" }}
     {{ $footer := resources.Get "css/blocks/footer.css" }}
-    {{ $home := resources.Get "css/blocks/home.css" }}
+    {{ $hero := resources.Get "css/blocks/hero.css" }}
+    {{ $faq := resources.Get "css/blocks/faq.css" }}
+    {{ $install := resources.Get "css/blocks/install.css" }}
+    {{ $repos := resources.Get "css/blocks/repos.css" }}
+    {{ $community := resources.Get "css/blocks/community.css" }}
     {{ $notFound := resources.Get "css/blocks/not-found.css" }}
     {{ $toc := resources.Get "css/blocks/toc.css" }}
-    {{ $docs := resources.Get "css/blocks/docs.css" }}
-    {{/* CSS Pipeline - split into two to work around Hugo slice bug with 13+ args */}}
+    {{ $docLayout := resources.Get "css/blocks/doc-layout.css" }}
+    {{ $docArticle := resources.Get "css/blocks/doc-article.css" }}
+    {{ $docCode := resources.Get "css/blocks/doc-code.css" }}
+    {{ $docAlerts := resources.Get "css/blocks/doc-alerts.css" }}
+    {{ $docNav := resources.Get "css/blocks/doc-nav.css" }}
+    {{ $docTables := resources.Get "css/blocks/doc-tables.css" }}
+    {{ $docMermaid := resources.Get "css/blocks/doc-mermaid.css" }}
     {{ $cssSlice1 := slice $composition $base $typography $utilities $skipLink $buttons $cards $sections $header $footer }}
-    {{ $cssSlice2 := slice $home $notFound }}
-    {{ $allCss := $cssSlice1 | append $cssSlice2 }}
-    {{ $css := $allCss | resources.Concat "css/main.css" }}
+    {{ $cssSlice2 := slice $hero $faq $install $repos $community $notFound }}
+    {{ $allMain := $cssSlice1 | append $cssSlice2 }}
+    {{ $css := $allMain | resources.Concat "css/main.css" }}
     {{ $css = $css | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-    {{/* Chroma classes (requires markup.highlight.noClasses = false) */}}
     {{ $syntaxChroma := resources.Get "css/syntax-chroma.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $syntaxChroma.RelPermalink }}">
-    {{/* toc.css and docs.css included separately due to Hugo bug */}}
-    {{ $tocCss := $toc | minify | fingerprint }}
-    {{ $docsCss := $docs | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $tocCss.RelPermalink }}">
+    {{ $cssSlice3 := slice $toc $docLayout $docArticle $docCode $docAlerts $docNav $docTables $docMermaid }}
+    {{ $docsCss := $cssSlice3 | resources.Concat "css/docs.css" }}
+    {{ $docsCss = $docsCss | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $docsCss.RelPermalink }}">
 
     <!-- Font Awesome Icons -->

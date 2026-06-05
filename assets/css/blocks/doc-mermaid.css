@@ -1,0 +1,74 @@
+/* Mermaid Diagrams */
+
+.doc-article__content .mermaid-container {
+  margin: var(--space-lg) 0;
+}
+
+.doc-article__content .mermaid-container .mermaid {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  font-family: "July", "Baloo Da 2", sans-serif;
+}
+
+.doc-article__content .mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Theme-aware node styling */
+[data-theme="light"] .doc-article__content .mermaid .node rect,
+[data-theme="light"] .doc-article__content .mermaid .node circle,
+[data-theme="light"] .doc-article__content .mermaid .node polygon,
+[data-theme="light"] .doc-article__content .mermaid .node path {
+  fill: var(--color-bg-1);
+  stroke: var(--color-accent-1);
+  stroke-width: 2px;
+}
+
+[data-theme="dark"] .doc-article__content .mermaid .node rect,
+[data-theme="dark"] .doc-article__content .mermaid .node circle,
+[data-theme="dark"] .doc-article__content .mermaid .node polygon,
+[data-theme="dark"] .doc-article__content .mermaid .node path {
+  fill: var(--color-bg-2);
+  stroke: var(--color-accent-2);
+  stroke-width: 2px;
+}
+
+/* Edges */
+[data-theme="light"] .doc-article__content .mermaid .edgePath .path {
+  stroke: var(--color-border-medium);
+  stroke-width: 2px;
+}
+
+[data-theme="dark"] .doc-article__content .mermaid .edgePath .path {
+  stroke: var(--color-border-light);
+  stroke-width: 2px;
+}
+
+/* Labels */
+.doc-article__content .mermaid .edgeLabel,
+.doc-article__content .mermaid .nodeLabel {
+  font-family: "JetBrains Mono", "July", "Baloo Da 2", sans-serif;
+}
+
+[data-theme="light"] .doc-article__content .mermaid .edgeLabel,
+[data-theme="light"] .doc-article__content .mermaid .nodeLabel {
+  color: var(--color-text);
+}
+
+[data-theme="dark"] .doc-article__content .mermaid .edgeLabel,
+[data-theme="dark"] .doc-article__content .mermaid .nodeLabel {
+  color: var(--color-text);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .doc-article__content .mermaid-container .mermaid {
+    padding: var(--space-md);
+  }
+}

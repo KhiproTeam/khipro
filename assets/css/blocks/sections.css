@@ -11,7 +11,7 @@
 /* Section Header */
 .section-header {
   text-align: center;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-lg);
 }
 
 .section-header__title {
@@ -21,23 +21,34 @@
   margin-bottom: var(--space-md);
   position: relative;
   display: inline-block;
+  padding-bottom: 0.625rem;
 }
 
 .section-header__title::after {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 4.375rem;
-  height: 0.125rem;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-full);
+  width: 70px;
+  height: 2px;
+  background-color: var(--color-primary-dark);
+  transition: all var(--transition-base);
+  border-radius: 9999px;
 }
 
 .section-header__description {
   font-size: 1.125rem;
   color: var(--color-text-secondary);
-  max-width: 32rem;
+  max-width: 42rem;
+  margin-top: var(--space-md);
   margin-inline: auto;
+}
+
+.section-header__description--md>p {
+  margin: 0;
+}
+
+.section-header__description--md>p+p {
+  margin-top: 0.65rem;
 }

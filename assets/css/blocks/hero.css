@@ -1,0 +1,131 @@
+/* Hero Section */
+
+#home {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  #home {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 3fr 2fr;
+    gap: 2.5rem;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__image {
+    order: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__image {
+    order: -1;
+  }
+}
+
+.hero__title {
+  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+}
+
+.hero__problem-box {
+  background-color: var(--color-card-bg);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.75rem 1rem 0.75rem 1.1rem;
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.hero__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.hero__image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  object-fit: contain;
+}
+
+@media (min-width: 400px) {
+  .hero__image img {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero__image img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__image img {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-md);
+}
+
+.hero__actions--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero__actions--mobile {
+    display: none;
+  }
+
+  .hero__actions--desktop {
+    display: flex;
+  }
+}
+
+.hero__content>.btn {
+  margin-top: var(--space-xl);
+}
