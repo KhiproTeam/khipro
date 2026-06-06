@@ -16,24 +16,24 @@ weight: 30
 [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/) ইনস্টল করা হয়ে গেলে এরপর কম্পিউটার লগ আউট করে আবার লগ ইন করতে হবে।  
 তারপরে সিস্টেমের ইনপুট মেথড কিংবা কিবোর্ড সংক্রান্ত সেটিংস থেকে [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/) সিলেক্ট করতে হবে। উবুন্টুতে নিচের ছবির মতো সেটিংস পাবেন Settings অ্যাপে। নিচের ছবি দ্রষ্টব্য...
 
-![image](/img/image1.png)  
+![image](image1.png)  
 
 যদি আপনার ডিস্ট্রোতে সেটিংস থেকে আইবাসের সেটিংস কনফিগার করা না যায় তবে ibus-preferences থেকে কাজটি করতে হবে। অ্যাপ মেনু -তে `ibus preferences` নামে, অথবা টার্মিনালে `ibus-setup` কমান্ড দিয়ে লঞ্চ করতে পারবেন এবং সেখান থেকে [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/) কিংবা `khipro-m17n` সিলেক্ট করতে পারবেন।
 
 তারপরে সেখান থেকে [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/)ের preferences কিংবা সেটিংসে যেতে হবে। নিচের ছবি দ্রষ্টব্য...
 
-![image](/img/image3.png)  
+![image](image3.png)  
 
 [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/)ের সেটিংস ওপেন হলে প্রথমেই দেখা যাবে "Dictionaries & Input Methods" ট্যাব। সেখান থেকে বাংলার জন্য **একটা ডিকশনারি** সিলেক্ট করতে হবে। বাংলার জন্য তিনটা ডিকশনারি পাবেন; যেকোনো একটি সিলেক্ট করলেই হবে।  
 এরপর [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/)ের মধ্যেই **ইনপুট মেথড** হিসেবে ক্ষিপ্রকে সিলেক্ট করতে হবে এবং অন্যান্য ইনপুট মেথড রিমুভ করতে পারেন। নিচের ছবি দ্রষ্টব্য...
 
-![image](/img/image4.png)  
+![image](image4.png)  
 
 এরপরে "Options" ট্যাবে গিয়ে সেখান থেকে:
 1. `Show final form while typing` এটা অবশ্যই চালু করে দিতে হবে।
 2. `Word predictions`-ও চালু করে দিতে পারেন।
 
-![image](/img/image5.png)  
+![image](image5.png)  
 
 > [!IMPORTANT]  
  "Avoid using the forward_key_event() function" এটাতে টিকচিহ্ন ✓ দিতে হবে যদি [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/)ে কমিট করার সময় হঠাৎ একা একা ইনসার্শন পয়েন্টার (insertion pointer) নড়ে যাওয়ার ইশুর সম্মুখীন হন। নাহলে দরকার নেই।
@@ -44,7 +44,7 @@ weight: 30
 3. commit-candidate-1-plus-space এই কিবাইন্ডিংয়ের কোনো দরকার নেই। কারণ হলো বাংলার জন্য সাজেশন কমিট করার পর স্পেস যুক্ত হওয়াটা ভালো না। বাংলায় বিভক্তি, কিংবা দুই শব্দ জোড়া দিয়ে লিখতে হতে পারে।  
 এডিট করা হলে কিছুটা নিচের ছবির মতো দাঁড়াবে:
 
-![image](/img/image6.png)  
+![image](image6.png)  
 
 প্রথম সাজেশনটাকে কমিট করার জন্য shift+J সেট করছি যাতে মূল কিবোর্ড থেকে হাত না সরিয়ে সাজেশন সিলেক্ট করা যায়।
 
@@ -57,6 +57,6 @@ weight: 30
 
 নিচের ছবি দ্রষ্টব্য...
 
-![image](/img/image7.png)
+![image](image7.png)
 
 কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
