@@ -33,8 +33,7 @@ weight: 25
 > [!CAUTION]
 বর্ণ অ্যান্ড্রয়েডে ক্ষিপ্র লেআউটে বেশ কিছু বাগ রয়েছে, যেগুলো যত দ্রুত সম্ভব ফিক্স করা হবে। বর্ণ অ্যান্ড্রয়েডে ক্ষিপ্র কয়েক ভার্শন পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।
 
-<a href="https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share">
-<img width="20%" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>
-</a>
+[<img width="30%" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
+
 
 কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
