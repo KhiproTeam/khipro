@@ -21,7 +21,7 @@ body {
   color: var(--color-text-primary);
   line-height: 1.6;
   min-height: 100vh;
-  word-spacing: 0.25em;
+  word-spacing: 0.12em;
   transition: background-color var(--transition-base), color var(--transition-base);
 }
 
@@ -56,7 +56,12 @@ ol {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: 600;
   line-height: 1.2;
