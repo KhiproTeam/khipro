@@ -147,7 +147,7 @@
 }
 
 .doc-article__description {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 /* ============================================
@@ -184,9 +184,14 @@
   font-size: 0.875rem;
 }
 
+.doc-alert__content {
+  font-size: 1.3rem;
+  line-height: 1.75;
+}
+
 .doc-alert__content strong {
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
 }
 
 .doc-alert__content p {
@@ -242,8 +247,13 @@
     font-size: 0.75rem;
   }
 
+  .doc-alert__content {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .doc-alert__content strong {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .doc-alert__content p {

@@ -203,48 +203,66 @@
 }
 
 /* Light mode copy button */
-.doc-article__content pre:has(code) .code-copy-btn {
-  background-color: rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.55);
-}
-
-.doc-article__content pre:has(code) .code-copy-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.8);
-}
-
-/* Dark mode copy button (white colors for dark bg) */
-[data-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn,
-[data-actual-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn {
-  background-color: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  color: rgba(255, 255, 255, 0.88);
-}
-
-[data-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn:hover,
-[data-actual-theme="dark"] .doc-article__content pre:has(code) .code-copy-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.32);
-  color: #ffffff;
-}
-
 .doc-article__content .code-copy-btn {
+  background-color: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  color: rgba(0, 0, 0, 0.75);
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.doc-article__content .code-copy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.28);
+  color: rgba(0, 0, 0, 0.95);
 }
 
 .doc-article__content .code-copy-btn i {
   font-size: 0.8rem;
 }
 
+/* Dark mode copy button */
+[data-theme="dark"] .doc-article__content .code-copy-btn,
+[data-actual-theme="dark"] .doc-article__content .code-copy-btn {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Prevent light-mode hover from leaking into dark mode */
+[data-theme="dark"] .doc-article__content .code-copy-btn:hover,
+[data-actual-theme="dark"] .doc-article__content .code-copy-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  color: #ffffff !important;
+}
+
 .code-copy-btn:active {
   transform: scale(0.95);
 }
 
+/* Copied state */
 .code-copy-btn--copied {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: #059669 !important;
+}
+
+.doc-article__content .code-copy-btn--copied:hover {
+  background-color: rgba(16, 185, 129, 0.18) !important;
+  color: #047857 !important;
+}
+
+/* Dark mode copied state */
+[data-theme="dark"] .doc-article__content .code-copy-btn--copied,
+[data-actual-theme="dark"] .doc-article__content .code-copy-btn--copied {
   background-color: rgba(16, 185, 129, 0.2) !important;
   border-color: rgba(16, 185, 129, 0.4) !important;
   color: #10b981 !important;
+}
+
+[data-theme="dark"] .doc-article__content .code-copy-btn--copied:hover,
+[data-actual-theme="dark"] .doc-article__content .code-copy-btn--copied:hover {
+  background-color: rgba(16, 185, 129, 0.28) !important;
+  color: #34d399 !important;
 }

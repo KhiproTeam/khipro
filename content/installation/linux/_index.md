@@ -1,7 +1,7 @@
 ---
 title: "লিনাক্স সিস্টেমে"
 description: "লিনাক্সে khipro-m17n (ibus-m17n / fcitx5-m17n), ইনস্টলার, আপডেট ও আনইনস্টল।"
-url: "/installation/linux/"
+
 weight: 10
 ---
 
@@ -53,11 +53,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/m
 
 ### **টাইপিং বুস্টার ইনস্টলেশন:**  
 _(এই ধাপটি ঐচ্ছিক হলেও খুবই গুরুত্বপূর্ণ)_  
-লিনাক্সে ক্ষিপ্র ব্যবহারের পূর্ণাঙ্গ আনন্দ পেতে হলে টাইপিং বুস্টার ইনস্টল করা উচিত। টাইপিং বুস্টার কী তা জানতে [এখানে ক্লিক করুন](/installation/typing_booster_configuration/)। উবুন্টুর মতো ডেবিয়ানভিত্তিক ডিস্ট্রোগুলোতে নিচের কমান্ড দিয়ে টাইপিং বুস্টার ইনস্টল করুন:
+লিনাক্সে ক্ষিপ্র ব্যবহারের পূর্ণাঙ্গ আনন্দ পেতে হলে টাইপিং বুস্টার ইনস্টল করা উচিত। টাইপিং বুস্টার কী তা জানতে [এখানে ক্লিক করুন](/installation/typing-booster-configuration/)। উবুন্টুর মতো ডেবিয়ানভিত্তিক ডিস্ট্রোগুলোতে নিচের কমান্ড দিয়ে টাইপিং বুস্টার ইনস্টল করুন:
    ```bash
    sudo apt install ibus-typing-booster
    ```
-   এরপরে [টাইপিং বুস্টারের সেটিংগুলো](/installation/typing_booster_configuration/) সুন্দর করে সাজিয়ে নিন। এটা নিয়ে ছবিযুক্ত একটা ছোট্টো গাইড লিখেছি আমরা; পড়তে [এখানে ক্লিক করুন](/installation/typing_booster_configuration/)।
+   এরপরে [টাইপিং বুস্টারের সেটিংগুলো](/installation/typing-booster-configuration/) সুন্দর করে সাজিয়ে নিন। এটা নিয়ে ছবিযুক্ত একটা ছোট্টো গাইড লিখেছি আমরা; পড়তে [এখানে ক্লিক করুন](/installation/typing-booster-configuration/)।
 
 ### টাইপিং বুস্টার ছাড়া ক্ষিপ্র:
 যারা টাইপিং বুস্টার ছাড়া ক্ষিপ্র ব্যবহার করতে বদ্ধপরিকর, তারা সিস্টেমের **Settings** > **Keyboard** > **Add Inpur Source** থেকে `Bangla (bn-khipro(m17n))` অ্যাড করে নিন।  

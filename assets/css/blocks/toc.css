@@ -278,7 +278,6 @@
   margin-top: var(--space-xs);
   padding-left: 0.45rem;
   margin-left: 0.1rem;
-  border-left: 2px solid var(--color-border-light);
 }
 
 .doc-toc__nest-dot {

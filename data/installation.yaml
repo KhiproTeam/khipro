@@ -15,7 +15,7 @@ platforms:
         icon: "fas fa-magic"
         description: "ক্ষিপ্রর সাথে টাইপিং বুস্টার সঠিকভাবে কনফিগার করে ব্যবহার করলে বাংলা টাইপিং অভিজ্ঞতাকে আরো ক্ষিপ্রতর করা সম্ভব।"
         link_text: "বিস্তারিত দেখুন"
-        link_url: "installation/typing_booster_configuration/"
+        link_url: "installation/typing-booster-configuration/"
   - name: "windows"
     display_name: "উইন্ডোজ"
     icon: "fab fa-windows"

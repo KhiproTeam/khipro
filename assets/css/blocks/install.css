@@ -181,6 +181,8 @@
 
 .install-card__btn:hover {
   background-color: var(--color-primary-dark);
+  color: #ffffff;
+  text-decoration: none;
   transform: translateY(-1px);
 }
 

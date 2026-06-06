@@ -1,7 +1,7 @@
 ---
 title: "অ্যান্ড্রয়েডে"
 description: "HeliBoard ও Borno Android এ ক্ষিপ্র লেআউট।"
-url: "/installation/android/"
+
 weight: 25
 ---
 

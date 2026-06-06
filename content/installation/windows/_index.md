@@ -1,7 +1,7 @@
 ---
 title: "উইন্ডোজ সিস্টেমে"
 description: "Windows-এ পোর্টেবল, বর্ণ কিবোর্ড ও NMS Kontho এর মাধ্যমে ক্ষিপ্র।"
-url: "/installation/windows/"
+
 weight: 20
 ---
 

@@ -31,8 +31,14 @@
   box-shadow: 0 4px 14px rgba(144, 67, 71, 0.3);
 }
 
+.btn:hover {
+  text-decoration: none;
+}
+
 .btn--primary:hover {
   background-color: var(--color-primary-dark);
+  color: #ffffff;
+  text-decoration: none;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(144, 67, 71, 0.4);
 }
@@ -54,6 +60,7 @@
   border-color: var(--color-primary);
   background-color: rgba(144, 67, 71, 0.08);
   color: var(--color-primary);
+  text-decoration: none;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(144, 67, 71, 0.15);
 }

@@ -11,7 +11,7 @@
 {{- if or (eq $currentSection "/quickstart/") (eq $currentRel "/quickstart/") -}}
   {{- $isSubmodule = true -}}
   {{- $contentFile = "content/quickstart/_index.md" -}}
-{{- else if or (eq $currentSection "/installation/") (eq $currentRel "/installation/") -}}
+{{- else if or (strings.HasPrefix $currentRel "/installation/") (eq $currentSection "/installation/") (eq $currentRel "/installation/") -}}
   {{- $isSubmodule = true -}}
   {{- $contentFile = printf "content/%s" .File.Path -}}
 {{- else if or (eq $currentSection "/documentation/") (eq $currentRel "/documentation/") -}}
