@@ -4,7 +4,7 @@
 
 
 ## What You'll Find on This Website
-* **Introduction to Khipro:** Learn about the core concept of Khipro Keyboard, its goals, and how it differs from traditional phonetic typing methods.
+* **Introduction to Khipro:** Learn about the core concept of Khipro Keyboard, its goals, and how it differs from phonetic typing methods.
 * **Comprehensive Documentation:** Access detailed mapping tables, explanations of character input, conjuncts, diacritics, and special symbols.
 * **Installation Guides:** Find step-by-step instructions for installing and configuring Khipro Keyboard on various operating systems, including Linux, Windows (via community solutions), and updates on Android development.
 * **Community Information:** Discover how to join the Khipro community, contribute to the project, and get support.
