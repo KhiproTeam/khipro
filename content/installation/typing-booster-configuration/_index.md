@@ -5,6 +5,7 @@ aliases:
   - "/installation/typing_booster_configuration/"
 weight: 30
 ---
+
 ## টাইপিং বুস্টার কী?
 [টাইপিং বুস্টার](https://mike-fabian.github.io/ibus-typing-booster/) একটি ইন্টেলিজেন্ট টাইপিং অ্যাসিসটেন্ট। এতে অনেক ফিচার রয়েছে, যেমন:  
 - আপনার লেখার অভ্যাসের উপর ভিত্তি করে next word suggestion অর্থাৎ পরবর্তী শব্দ অনুমান করে সাজেশন দিতে পারবে।  
