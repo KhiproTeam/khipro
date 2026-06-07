@@ -23,8 +23,8 @@ weight: 25
 
 হেলিবোর্ড একটি ওপেনসোর্স আন্ড্রয়েড কিবোর্ড অ্যাপ। আমাদের কমিউনিটির হাত ধরে ক্ষিপ্র লেআউট এই কিবোর্ডে যুক্ত হয়েছে। হেলিবোর্ডের `3.6-beta1` ও পরবর্তী সকল Beta ও Stable রিলিস থেকে ক্ষিপ্র লেআউট ব্যবহার করা যাবে। নিচের লিংক থেকে হেলিবোর্ড ডাউনলোড করতে পারবেন।
 
-- [হেলিবোর্ড গিটহাব রিলিস পেইজ](https://github.com/HeliBorg/HeliBoard/releases)  
-- [এফ-ড্রয়েডে হেলিবোর্ড](https://f-droid.org/packages/helium314.keyboard)
+- [হেলিবোর্ড GitHub রিলিস পেইজ](https://github.com/HeliBorg/HeliBoard/releases)  
+- [F-Droid-এ হেলিবোর্ড](https://f-droid.org/packages/helium314.keyboard)
 
 > [!CAUTION]  
 হেলিবোর্ডের রিলিসে দুটি সমস্যা রয়েছে (Known Issues):  
