@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="3.0998306"
-     inkscape:cx="136.78167"
-     inkscape:cy="10.645743"
+     inkscape:zoom="1.5499153"
+     inkscape:cx="124.52293"
+     inkscape:cy="27.098255"
      inkscape:window-width="1536"
      inkscape:window-height="792"
      inkscape:window-x="0"
@@ -42,25 +42,31 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-25.788046,-126.42352)">
-    <rect
-       style="opacity:0.893325;fill:#c1656a;fill-opacity:1;stroke:#000000;stroke-width:0"
-       id="rect1"
-       width="74.192101"
-       height="9.3890314"
-       x="25.788046"
-       y="126.42352"
-       ry="0.99785548"
-       rx="1.0242468" />
-    <text
-       xml:space="preserve"
-       style="font-size:5.64444px;font-family:'Noto Sans Bengali UI';-inkscape-font-specification:'Noto Sans Bengali UI';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.893325;fill:#c1656a;fill-opacity:1;stroke:#000000;stroke-width:0"
-       x="62.75732"
-       y="133.19612"
-       id="text1"><tspan
-         sodipodi:role="line"
-         id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Levenim MT';-inkscape-font-specification:'Levenim MT Bold';fill:#000000;stroke:#000000;stroke-width:0"
-         x="62.757317"
-         y="133.19612">Download Borno Windows</tspan></text>
+    <g
+       id="g1"
+       inkscape:export-filename="Download_borno_windows_button.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="opacity:0.893325;fill:#c1656a;fill-opacity:1;stroke:#000000;stroke-width:0"
+         id="rect1"
+         width="79.313347"
+         height="9.3890381"
+         x="23.483484"
+         y="126.42352"
+         ry="0.99785757"
+         rx="0.89621878" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;font-family:'Noto Sans Bengali UI';-inkscape-font-specification:'Noto Sans Bengali UI';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.893325;fill:#c1656a;fill-opacity:1;stroke:#000000;stroke-width:0"
+         x="63.013382"
+         y="133.19612"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Levenim MT';-inkscape-font-specification:'Levenim MT Bold';fill:#000000;stroke:#000000;stroke-width:0"
+           x="63.013378"
+           y="133.19612">Download Borno Windows</tspan></text>
+    </g>
   </g>
 </svg>
