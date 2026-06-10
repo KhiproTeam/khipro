@@ -13,6 +13,8 @@ weight: 25
 
 বর্ণ অ্যান্ড্রয়েডে ক্ষিপ্র লেআউট অফিশিয়ালি যুক্ত করা হয়েছে।
 
+1. নিচের বাটনে ক্লিক করে বর্ণ অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন।
+2. বর্ণ অ্যাপের "Keyboard Layouts" মেনু থেকে "ক্ষিপ্র" সিলেক্ট করুন।
 
 [<img width="30%" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
 
