@@ -13,3 +13,6 @@ aliases:
 3. **[উইন্ডোজ সিস্টেমে](/installation/windows/)** — পোর্টেবল, বর্ণ, NMS Kontho।  
 4. **[অ্যান্ড্রয়েডে](/installation/android/)** — HeliBoard ও Borno Android।  
 5. **[টাইপিং বুস্টার কনফিগার করা](/installation/typing-booster-configuration/)** — আইবাস-ভিত্তিক সেরা অভিজ্ঞতার জন্য।  
+
+#khipro_compositional_layout #khipro_layout
+#not_phonetic_nor_fixed

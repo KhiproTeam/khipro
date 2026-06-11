@@ -6,7 +6,7 @@ aliases:
 weight: 15
 ---
 
-# ওয়েব ব্রাউজারে
+# ওয়েব ব্রাউজারে Khipro Compositional Layout
 
 ক্ষিপ্র লেআউট ওয়েব ব্রাউজারে টেস্ট করা যায়। লিংক: https://khiproteam.github.io/khipro/quickstart/#libh-tipn-dm
 ওখানে টাইপ করে আপনি যেকোনো জায়গায় কপি পেস্ট করতে পারবেন। এটা কেবল টেস্টিংয়ের জন্য বানানো হয়েছে।

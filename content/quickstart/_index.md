@@ -5,7 +5,7 @@ url: "/quickstart/"
 ---
 
 
-## এক নজরে ক্ষিপ্র লেআউট
+## এক নজরে ক্ষিপ্র লেআউট (Khipro Compositional Layout)
 ![ক্ষিপ্র লেআউট এক নজরে](https://raw.githubusercontent.com/KhiproTeam/khipro-at-a-glance/refs/heads/main/the_table_2.svg)
 
 ## ক্ষিপ্র কিবোর্ডের বিশেষত্ব
