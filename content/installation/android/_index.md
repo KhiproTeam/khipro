@@ -1,11 +1,10 @@
 ---
-title: "অ্যান্ড্রয়েডে"
+title: "অ্যান্ড্রয়েডে Khipro Compositional Layout"
 description: "HeliBoard ও Borno Android এ ক্ষিপ্র লেআউট।"
 
 weight: 25
 ---
 
-# অ্যান্ড্রয়েডে Khipro Compositional Layout
 
 অ্যান্ড্রয়েড অপারেটিং সিস্টেমে ক্ষিপ্র ব্যবহার করা যাচ্ছে নিচের উপায়গুলোয়:
 

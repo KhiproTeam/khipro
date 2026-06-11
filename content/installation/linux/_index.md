@@ -1,12 +1,10 @@
 ---
-title: "লিনাক্স সিস্টেমে"
+title: "লিনাক্স সিস্টেমে - Khipro Compositional Layout"
 description: "লিনাক্সে khipro-m17n (ibus-m17n / fcitx5-m17n), ইনস্টলার, আপডেট ও আনইনস্টল।"
 
 weight: 10
 ---
 
-
-# লিনাক্স সিস্টেমে - Khipro Compositional Layout
 
 লিনাক্স সিস্টেমে khipro-m17n দুই উপায়ে ব্যবহার করা যায়:
 

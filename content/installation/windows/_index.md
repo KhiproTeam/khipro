@@ -1,11 +1,9 @@
 ---
-title: "উইন্ডোজ সিস্টেমে"
+title: "উইন্ডোজ সিস্টেমে Khipro Compositional Layout"
 description: "Windows-এ পোর্টেবল, বর্ণ কিবোর্ড ও NMS Kontho এর মাধ্যমে ক্ষিপ্র।"
 
 weight: 20
 ---
-
-# উইন্ডোজ সিস্টেমে Khipro Compositional Layout
 
 একাধিক উপায়ে ক্ষিপ্রকে উইন্ডোজে ব্যবহার করা যাচ্ছে:
 

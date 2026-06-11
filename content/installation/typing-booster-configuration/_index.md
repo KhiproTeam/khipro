@@ -1,5 +1,5 @@
 ---
-title: "টাইপিং বুস্টার কনফিগার করা"
+title: "টাইপিং বুস্টার কনফিগার করা (লিনাক্সে khipro-m17n ব্যবহারের জন্য)"
 description: "ibus-typing-booster এর সাথে ক্ষিপ্র ব্যবহারের ডিকশনারি, কিবাইন্ডিং ও UI সেটিংস।"
 aliases:
   - "/installation/typing_booster_configuration/"
