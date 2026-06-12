@@ -32,9 +32,11 @@ Khipro Windows Portable -এ কোনো সাজেশন পাওয়া য
 
 কোডপত্রের ওয়েবসাইট থেকে বর্ণ কিবোর্ডের সর্বশেষ ভার্শনটি ডাউনলোড করে ইনস্টল করুন, নিচের বাটন প্রেস করে:  
 
-[![Download Borno Button](Download_borno_windows_button.png)](https://codepotro.com/borno/)
+> [!WARNING]
+বর্ণ কিবোর্ডে ক্ষিপ্র-র ভার্শন একটু পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।  
+বর্ণ উইন্ডোজে ক্ষিপ্র-র ভার্শন: v34.8.0  
+**ক্ষিপ্র-র অফিশিয়াল** সর্বশেষ ভার্শন: [v34.12.0](https://github.com/rank-coder/khipro-m17n/releases/tag/v34.12.0)
 
-> [!NOTE]
-বর্ণ কিবোর্ডে ক্ষিপ্র-র ভার্শন একটু পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।
+[![Download Borno Button](Download_borno_windows_button.png)](https://codepotro.com/borno/)
 
 কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
