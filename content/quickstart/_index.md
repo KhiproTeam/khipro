@@ -403,6 +403,8 @@ z(aelg/oridom) --> g(অ্যালগরিদম)
 ## ক্ষিপ্র ইনস্টল করা
 লিনাক্স, উইন্ডোজ, কিংবা অ্যান্ড্রয়েডে ক্ষিপ্র ইনস্টল করার নির্দেশনা দেখতে ক্ষিপ্র-র [ইনস্টলেশন পেজ](https://khipro.khiproteam.com/#installation) ভিসিট করুন।
 
+[ <img width="50%" alt="install khipro button" src="install_khipro_button.png">](https://khipro.khiproteam.com/#installation)
+
 ## কুইকস্টার্ট গাইডে অবদান রাখা বা কনট্রিবিউট করা
 এই কুইকস্টার্ট গাইডে কোনো ভুল খুঁজে পেলে, বা কোনো সংশোধন-পরিমার্জনের প্রয়োজনবোধ করলে:
 1. https://github.com/KhiproTeam/khipro/blob/main/content/quickstart/_index.md এই ফাইলে সরাসরি পরিবর্তন করে PR (পুল রিকোয়েস্ট) দিতে পারেন।
