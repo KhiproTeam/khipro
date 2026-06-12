@@ -34,7 +34,7 @@ Khipro Windows Portable -এ কোনো সাজেশন পাওয়া য
 
 > [!WARNING]
 বর্ণ কিবোর্ডে ক্ষিপ্র-র ভার্শন একটু পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।  
-**বর্ণ উইন্ডোজে** ক্ষিপ্র-র ভার্শন: v34.8.0  
+**বর্ণ উইন্ডোজে** ক্ষিপ্র-র ভার্শন: [v34.8.0](https://github.com/rank-coder/khipro-m17n/releases/tag/v34.8.0)  
 **ক্ষিপ্র-র অফিশিয়াল** সর্বশেষ ভার্শন: [v34.12.0](https://github.com/rank-coder/khipro-m17n/releases/tag/v34.12.0)
 
 [![Download Borno Button](Download_borno_windows_button.png)](https://codepotro.com/borno/)
