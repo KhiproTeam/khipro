@@ -17,6 +17,8 @@ weight: 25
 
 [<img width="30%" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
 
+> [!WARNING]
+বর্ণতে ক্ষিপ্র এক ভার্শন পিছনে থাকতে পারে, যেহেতু ক্ষিপ্র-কে ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।
 
 ## HeliBoard
 
