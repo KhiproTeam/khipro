@@ -4,7 +4,7 @@ description: "ক্ষিপ্র কিবোর্ডের সম্পূ�
 url: "/documentation/"
 ---
 
-ক্ষিপ্র ৩৪তম সংস্করণ: ১০ এপ্রিল, ২০২৬
+ক্ষিপ্র ৩৫তম সংস্করণ: ২০ জুন, ২০২৬
 
 [Click here to view the Guidelines for Developers](#dbhlprdr-jnj-for-developers)
 
