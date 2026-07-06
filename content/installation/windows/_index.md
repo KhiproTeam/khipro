@@ -16,7 +16,7 @@ weight: 20
 
 উইন্ডোজে ক্ষিপ্র-র ন্যাটিভ সাপোর্ট রয়েছে। _ক্ষিপ্র উইন্ডোজ পোর্টেবলের_ মাধ্যমে উইন্ডোজেও **আপডেটেড** ক্ষিপ্র কিবোর্ড লেআউট অর্থাৎ `khipro-m17n`-এর ন্যায় ব্যবহার করা যাবে।
 
-1. `Khipro Windows Portable`-এর [সর্বশেষ গিটহাব রিলিস](https://github.com/KhiproTeam/khipro-windows-portable/releases) থেকে `khipro.exe` ডাউনলোড করুন।
+1. `Khipro Windows Portable`-এর <a href="https://github.com/KhiproTeam/khipro-windows-portable/releases" target="_blank" rel="noopener noreferrer">সর্বশেষ গিটহাব রিলিস</a> থেকে `khipro.exe` ডাউনলোড করুন।
 2. ডাবল ক্লিক করে `khipro.exe` রান করুন। রান করা হলে সিস্টেম ট্রেতে ক্ষিপ্র আইকন দেখতে পাবেন।
 3. `Ctrl+Space` চেপে অথবা ক্ষিপ্র আইকনের উপর মাউসের লেফ্‌ট ক্লিক করে ক্ষিপ্র কিবোর্ড অ্যাকটিভ অথবা ইনঅ্যাকটিভ করতে পারবেন।
 4. রাইট ক্লিক মেনু থেকেও ক্ষিপ্র কিবোর্ড অ্যাকটিভ, ইনঅ্যাকটিভ করা যাবে। `Exit` করতে চাইলে রাইট ক্লিক করে `Exit`-এ ক্লিক করুন।
@@ -28,7 +28,7 @@ Khipro Windows Portable -এ কোনো সাজেশন পাওয়া য
 তবে ক্ষিপ্র-র লেটেস্ট ভার্শন ব্যবহার করতে চাইলে এই পোর্টেবল ভার্শন  ব্যবহার করুন।
 
 ## ক্ষিপ্র পোর্টেবল-এর আপডেট করা
-[khipro-windows-portable -এর রিলিস পেজে](https://github.com/KhiproTeam/khipro-windows-portable/releases) চেক করুন কোনো নতুন আপডেট এসেছে কিনা। আপডেট এসে থাকলে পুরাতন ভার্শন uninstall করে নতুন ভার্শন ডাউনলোড করে install করে নিন।
+<a href="https://github.com/KhiproTeam/khipro-windows-portable/releases" target="_blank" rel="noopener noreferrer">khipro-windows-portable -এর রিলিস পেজে</a> চেক করুন কোনো নতুন আপডেট এসেছে কিনা। আপডেট এসে থাকলে পুরাতন ভার্শন uninstall করে নতুন ভার্শন ডাউনলোড করে install করে নিন।
 
 > [!TIP] আপনার ডিভাইসে আপডেট নোটিফিকেশন পেতে চাইলে [আপডেট নোটিফিকেশন সেটআপ](https://khipro.khiproteam.com/installation/linux/#apdt-ntfkshn-shtap-kr) করুন।
 
@@ -41,9 +41,9 @@ Khipro Windows Portable -এ কোনো সাজেশন পাওয়া য
 
 > [!WARNING]
 বর্ণ কিবোর্ডে ক্ষিপ্র-র ভার্শন একটু পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।  
-**বর্ণ উইন্ডোজে** ক্ষিপ্র-র ভার্শন: [v34.8.0](https://github.com/rank-coder/khipro-m17n/releases/tag/v34.8.0)  
-**ক্ষিপ্র-র অফিশিয়াল** সর্বশেষ ভার্শন: [ক্ষিপ্রর সর্বশেষ ভার্শন](https://github.com/rank-coder/khipro-m17n/releases/latest)
+**বর্ণ উইন্ডোজে** ক্ষিপ্র-র ভার্শন: <a href="https://github.com/rank-coder/khipro-m17n/releases/tag/v34.8.0" target="_blank" rel="noopener noreferrer">v34.8.0</a>  
+**ক্ষিপ্র-র অফিশিয়াল** সর্বশেষ ভার্শন: <a href="https://github.com/rank-coder/khipro-m17n/releases/latest" target="_blank" rel="noopener noreferrer">ক্ষিপ্রর সর্বশেষ ভার্শন</a>
 
-[![Download Borno Button](Download_borno_windows_button.png)](https://codepotro.com/borno/)
+<a href="https://codepotro.com/borno/" target="_blank" rel="noopener noreferrer"><img src="Download_borno_windows_button.png" alt="Download Borno Button" /></a>
 
-কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
+কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://khiproteam.github.io/khipro/#community" target="_blank" rel="noopener noreferrer">https://khiproteam.github.io/khipro/#community</a>
