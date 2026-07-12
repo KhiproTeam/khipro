@@ -10,7 +10,7 @@ aliases:
 
 1. **[লিনাক্স সিস্টেমে](/installation/linux/)** — `ibus-m17n` / `fcitx5-m17n`, ইনস্টলার কমান্ড ও আপডেট/আনইনস্টল।  
 2. **[ওয়েব ব্রাউজারে](/installation/browser/)** — ব্রাউজারে দ্রুত টেস্ট করার লিংক ও নোট।  
-3. **[উইন্ডোজ সিস্টেমে](/installation/windows/)** — পোর্টেবল, বর্ণ, NMS Kontho।  
+3. **[উইন্ডোজ সিস্টেমে](/installation/windows/)** — পোর্টেবল, বর্ণ উইন্ডোজ।  
 4. **[অ্যান্ড্রয়েডে](/installation/android/)** — HeliBoard ও Borno Android।  
 5. **[টাইপিং বুস্টার কনফিগার করা](/installation/typing-booster-configuration/)** — আইবাস-ভিত্তিক সেরা অভিজ্ঞতার জন্য।  
 
