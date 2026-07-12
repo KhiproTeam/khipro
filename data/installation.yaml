@@ -36,12 +36,12 @@ platforms:
     methods:
       - title: "বর্ণ অ্যান্ড্রয়েড"
         icon: "fab fa-android"
-        description: "Codepotro টিম তাদের জনপ্রিয় Borno Android কিবোর্ডে ক্ষিপ্র যুক্ত করবেন বলে জানিয়েছেন। পরবর্তী আপডেটগুলো থেকে বর্ণ অ্যান্ড্রয়েডে ক্ষিপ্র লেআউট ব্যবহার করা যাবে।"
+        description: "Codepotro-র জনপ্রিয় কিবোর্ড Borno Android-এ ক্ষিপ্র লেআউট বিল্ট-ইন থাকছে।"
         link_text: "বিস্তারিত দেখুন"
         link_url: "installation/android/#borno-android"
       - title: "হেলিবোর্ডে ক্ষিপ্র"
         icon: "fab fa-android"
-        description: "ওপেন সোর্স কিবোর্ড হেলিবোর্ডে অফিশিয়ালি ক্ষিপ্র লেআউট যুক্ত করা হয়েছে। HeliBoard 3.6-beta1 থেকে সকল পরবর্তী রিলিজে ক্ষিপ্র লেআউট ব্যবহার করা যাবে।"
+        description: "ওপেন সোর্স কিবোর্ড হেলিবোর্ডে অফিশিয়ালি ক্ষিপ্র লেআউট যুক্ত করা হয়েছে। HeliBoard 3.6-beta1 থেকে সকল পরবর্তী রিলিজে ক্ষিপ্র লেআউট ব্যবহার করা যাবে।"
         link_text: "বিস্তারিত দেখুন"
         link_url: "installation/android/#heliboard"
       
