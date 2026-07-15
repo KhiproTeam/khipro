@@ -20,7 +20,7 @@ weight: 25
 > [!WARNING]
 বর্ণতে ক্ষিপ্র এক ভার্শন পিছনে থাকতে পারে, যেহেতু ক্ষিপ্র-কে ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।  
 **বর্ণ অ্যান্ড্রয়েডে** ক্ষিপ্র-র ভার্শন: [v34.7.4](https://github.com/rank-coder/khipro-m17n/releases/tag/v34.7.4)  
-**ক্ষিপ্র-র অফিশিয়াল** সর্বশেষ ভার্শন: [v36.2.1](https://github.com/rank-coder/khipro-m17n/releases/tag/v36.2.1)
+**ক্ষিপ্র-র অফিশিয়াল** সর্বশেষ ভার্শন: [latest stable](https://github.com/rank-coder/khipro-m17n/releases/latest)
 
 ## HeliBoard
 
