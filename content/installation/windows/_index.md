@@ -46,4 +46,4 @@ Khipro Windows Portable -এ কোনো সাজেশন পাওয়া য
 
 <a href="https://codepotro.com/borno/" target="_blank" rel="noopener noreferrer"><img src="Download_borno_windows_button.png" alt="Download Borno Button" /></a>
 
-কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://khiproteam.github.io/khipro/#community" target="_blank" rel="noopener noreferrer">https://khiproteam.github.io/khipro/#community</a>
+কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: <a href="https://khipro.khiproteam.com/#community" target="_blank" rel="noopener noreferrer">https://khipro.khiproteam.com/#community</a>

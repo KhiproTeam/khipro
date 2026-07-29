@@ -59,4 +59,4 @@ weight: 30
 নিচের ছবি দ্রষ্টব্য...
 ![image](image7.png)
 
-কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
+কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: [https://khipro.khiproteam.com/#community](https://khipro.khiproteam.com/#community)

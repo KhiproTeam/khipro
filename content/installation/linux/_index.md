@@ -171,4 +171,4 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/m
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/main/installer)"
 ```
 
-কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: https://khiproteam.github.io/khipro/#community
+কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: [https://khipro.khiproteam.com/#community](https://khipro.khiproteam.com/#community)
