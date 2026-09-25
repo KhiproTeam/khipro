@@ -13,8 +13,8 @@
 }
 
 .community-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 20rem));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-sm);
   width: min(100%, 76rem);
@@ -37,6 +37,7 @@
 }
 
 .community-card {
+  flex: 0 1 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
