@@ -767,7 +767,7 @@ const MermaidDiagrams = (() => {
       startOnLoad: false,
       theme: getTheme(),
       securityLevel: "loose",
-      fontFamily: "Baloo Da 2, sans-serif",
+      fontFamily: "'JetBrains Mono', 'July', 'Baloo Da 2', sans-serif",
       maxTextSize: 50000,
       flowchart: {
         maxTextSize: 50000,
@@ -808,7 +808,7 @@ const MermaidDiagrams = (() => {
       theme: theme,
       startOnLoad: false,
       securityLevel: "loose",
-      fontFamily: "Baloo Da 2, sans-serif",
+      fontFamily: "'JetBrains Mono', 'July', 'Baloo Da 2', sans-serif",
       maxTextSize: 50000,
       flowchart: {
         maxTextSize: 50000,

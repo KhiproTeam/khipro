@@ -42,7 +42,7 @@
   margin: 0 0 var(--space-sm);
   border: 1px solid rgba(0, 0, 0, 0.12);
   font-family: "JetBrains Mono", "July", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
-  font-size: 0.9375rem;
+  font-size: 1.3rem;
   line-height: 1.45;
   tab-size: 4 !important;
   -moz-tab-size: 4 !important;
@@ -179,6 +179,13 @@
   display: block;
   white-space: pre;
   overflow-wrap: normal;
+}
+
+/* Match body text size on mobile (#62) */
+@media (max-width: 767px) {
+  .doc-article__content pre:has(code) {
+    font-size: 1rem;
+  }
 }
 
 /* Code Copy Button */

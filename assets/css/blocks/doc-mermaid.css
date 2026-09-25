@@ -52,7 +52,8 @@
 
 /* Labels */
 .doc-article__content .mermaid .edgeLabel,
-.doc-article__content .mermaid .nodeLabel {
+.doc-article__content .mermaid .nodeLabel,
+.doc-article__content .mermaid .cluster-label span {
   font-family: "JetBrains Mono", "July", "Baloo Da 2", sans-serif;
 }
 

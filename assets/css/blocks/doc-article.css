@@ -133,15 +133,28 @@
   margin-bottom: var(--space-sm);
 }
 
+/* Light mode links use blue: distinct from colored bold text in alerts
+   (warning gold / caution red), per issue #64 */
 .doc-article__content a {
-  color: var(--color-primary);
+  color: #1f6feb;
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 .doc-article__content a:hover {
-  color: var(--color-primary-dark);
+  color: #1a5fd0;
   text-decoration: underline;
+}
+
+/* Dark mode keeps the accent link color (already distinct from alert bolds) */
+[data-theme="dark"] .doc-article__content a,
+[data-actual-theme="dark"] .doc-article__content a {
+  color: var(--color-accent-2);
+}
+
+[data-theme="dark"] .doc-article__content a:hover,
+[data-actual-theme="dark"] .doc-article__content a:hover {
+  color: var(--color-primary-dark);
 }
 
 /* Current page link highlighting */
