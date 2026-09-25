@@ -14,7 +14,8 @@
 
 .community-links {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 20rem));
+  justify-content: center;
   gap: var(--space-sm);
   width: min(100%, 76rem);
   max-width: 100%;
@@ -26,13 +27,11 @@
 @media (min-width: 640px) {
   .community-links {
     gap: clamp(0.35rem, 1.25vw, 0.85rem);
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 920px) {
   .community-links {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: clamp(0.4rem, 1.35vw, 0.95rem);
   }
 }
