@@ -3,7 +3,8 @@
     <div class="u-container">
         <!-- Footer Content -->
         <div class="footer__content">
-            <p>{{ site.Data.footer.start_year }}–{{ now.Year }} {{ site.Data.footer.copyright_text }}</p>
+            <p>{{ site.Data.footer.start_year }}–{{ now.Year }} {{ site.Data.footer.copyright_text }}
+            {{ with site.Data.footer.org_link }} • <a href="{{ . }}" target="_blank" rel="noopener">{{ site.Data.footer.org_name }}</a>{{ end }}</p>
         </div>
     </div>
 </footer>

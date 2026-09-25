@@ -184,7 +184,7 @@
 
         <div class="community-links">
             {{ range $community.communities }}
-            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="card community-card">
+            <a href="{{ .link }}"{{ if not (hasPrefix .link "mailto:") }} target="_blank" rel="noopener noreferrer"{{ end }} class="card community-card">
                 <div class="community-icon">
                     <i class="{{ .icon }}" aria-hidden="true"></i>
                 </div>

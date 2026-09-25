@@ -17,4 +17,8 @@ communities:
     icon: "fab fa-telegram"
     description: "সরাসরি আলোচনা ও সাপোর্টের জন্য"
     link: "https://t.me/KhiproChat"
+  - name: "ইমেইল"
+    icon: "fas fa-envelope"
+    description: "প্রশ্ন, পরামর্শ বা সহযোগিতার জন্য সরাসরি ইমেইল করুন"
+    link: "mailto:khiproteam@googlegroups.com"
 

@@ -10,3 +10,13 @@
 .footer__content {
   font-size: 0.9375rem;
 }
+
+.footer__content a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer__content a:hover {
+  text-decoration: none;
+}
