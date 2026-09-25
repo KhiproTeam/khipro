@@ -26,13 +26,13 @@
 @media (min-width: 640px) {
   .community-links {
     gap: clamp(0.35rem, 1.25vw, 0.85rem);
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 920px) {
   .community-links {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: clamp(0.4rem, 1.35vw, 0.95rem);
   }
 }
