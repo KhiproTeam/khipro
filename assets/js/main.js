@@ -1036,10 +1036,75 @@ const ResponsiveTables = (() => {
   return { init };
 })();
 
+// IMAGE LIGHTBOX MODULE (#48)
+const Lightbox = (() => {
+  let overlay, imgEl, captionEl;
+
+  const close = () => {
+    overlay.hidden = true;
+    document.body.classList.remove("lightbox-open");
+  };
+
+  const open = (img) => {
+    imgEl.src = img.currentSrc || img.src;
+    imgEl.alt = img.alt || "";
+    captionEl.textContent = img.alt || "";
+    captionEl.hidden = !img.alt;
+    overlay.hidden = false;
+    document.body.classList.add("lightbox-open");
+  };
+
+  const build = () => {
+    overlay = document.createElement("div");
+    overlay.className = "lightbox";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.hidden = true;
+    overlay.innerHTML =
+      '<button class="lightbox__close" type="button" aria-label="বন্ধ করুন">&times;</button>' +
+      '<figure class="lightbox__figure">' +
+      '<img class="lightbox__img" alt="" />' +
+      '<figcaption class="lightbox__caption"></figcaption>' +
+      "</figure>";
+    document.body.appendChild(overlay);
+    imgEl = overlay.querySelector(".lightbox__img");
+    captionEl = overlay.querySelector(".lightbox__caption");
+
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay || event.target.closest(".lightbox__close")) {
+        close();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !overlay.hidden) {
+        close();
+      }
+    });
+  };
+
+  const init = () => {
+    const images = document.querySelectorAll(".doc-article__content img");
+    if (!images.length) {
+      return;
+    }
+    build();
+    images.forEach((img) => {
+      if (img.closest("a")) {
+        return;
+      }
+      img.classList.add("lightboxable");
+      img.addEventListener("click", () => open(img));
+    });
+  };
+
+  return { init };
+})();
+
 // INITIALIZATION
 const App = (() => {
   const init = () => {
     ThemeToggle.init();
+    Lightbox.init();
 
     // Theme toggle buttons
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {

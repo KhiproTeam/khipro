@@ -64,7 +64,8 @@
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     {{ $syntaxChroma := resources.Get "css/syntax-chroma.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $syntaxChroma.RelPermalink }}">
-    {{ $cssSlice3 := slice $toc $docLayout $docArticle $docCode $docAlerts $docNav $docTables $docMermaid }}
+    {{ $docLightbox := resources.Get "css/blocks/lightbox.css" }}
+    {{ $cssSlice3 := slice $toc $docLayout $docArticle $docCode $docAlerts $docNav $docTables $docMermaid $docLightbox }}
     {{ $docsCss := $cssSlice3 | resources.Concat "css/docs.css" }}
     {{ $docsCss = $docsCss | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $docsCss.RelPermalink }}">
