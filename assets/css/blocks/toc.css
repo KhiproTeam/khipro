@@ -364,6 +364,8 @@
   width: 100%;
   max-width: 320px;
   height: 100vh;
+  /* dvh: dynamic viewport — panel (and last TOC entries) stay above mobile browser UI (#63) */
+  height: 100dvh;
   background-color: var(--color-card-bg);
   display: flex;
   flex-direction: column;

@@ -9,6 +9,8 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  /* Anchor targets land below the sticky header (#70) */
+  scroll-padding-top: 5rem;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
