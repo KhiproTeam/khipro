@@ -7,7 +7,7 @@ communities:
     link: "https://www.facebook.com/khiproteam"
   - name: "গিটহাব ডিসকাশন ফোরাম"
     icon: "fab fa-github"
-    description: "আপনার আইডিয়া, মতামত, ভাবনা শেয়ার করতে"
+    description: "লেআউট সম্পর্কে আপনার আইডিয়া, মতামত, ভাবনা শেয়ার করতে"
     link: "https://github.com/rank-coder/khipro-m17n/discussions"
   - name: "ফেসবুক গ্রুপ"
     icon: "fab fa-facebook-f"
