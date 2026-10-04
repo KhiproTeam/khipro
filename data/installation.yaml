@@ -38,7 +38,7 @@ platforms:
         icon: "fab fa-android"
         description: "একটি ওপেন সোর্স, প্রাইভেসি-সমৃদ্ধ, অফলাইন, স্মার্ট কিবোর্ড অ্যাপ"
         link_text: "বিস্তারিত দেখুন"
-        link_url: "installation/android/"
+        link_url: "installation/android/#wm-keyboard"
       - title: "বর্ণ অ্যান্ড্রয়েড"
         icon: "fab fa-android"
         description: "Codepotro-র জনপ্রিয় কিবোর্ড Borno Android-এ ক্ষিপ্র লেআউট বিল্ট-ইন থাকছে।"
