@@ -12,11 +12,8 @@ weight: 25
 WM কিবোর্ডের [অফিশিয়াল গিটহাব পেজ](https://github.com/wasi-master/wmkeyboard/blob/main/README.md) অনুযায়ী  
 "An open source multilingual Android keyboard with prediction, glide typing, transliteration, emoji search and a 75+ tool toolbox that all run on the phone and never phone home."
 
-<p>
-<a href="https://f-droid.org/packages/com.wasimaster.wmkeyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" width="15%"></a>
-<a href="https://github.com/wasi-master/wmkeyboard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" width="15%"></a>
-<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/wasi-master/wmkeyboard"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" width="15%"></a>
-</p>
+<a href="https://f-droid.org/packages/com.wasimaster.wmkeyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" width="15%"></a> <a href="https://github.com/wasi-master/wmkeyboard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" width="15%"></a> <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/wasi-master/wmkeyboard"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" width="15%"></a>
+
 
 # Borno Android
 
