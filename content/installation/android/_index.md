@@ -14,11 +14,11 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 
 <p>
 <a href="https://play.google.com/store/apps/details?id=com.wasimaster.wmkeyboard&pcampaignid=web_share" >
-<img src = "GetItOnGooglePlay_Badge_Web_color_English.width-1440.png" height="50" alt="Get it on PlayStore">
+<img src = "GetItOnGooglePlay_Badge_Web_color_English.width-1440.png" height="38" alt="Get it on PlayStore">
 </a>
-<a href="https://f-droid.org/packages/com.wasimaster.wmkeyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="72"></a>
-<a href="https://github.com/wasi-master/wmkeyboard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" height="72"></a>
-<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/wasi-master/wmkeyboard"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" height="72"></a>
+<a href="https://f-droid.org/packages/com.wasimaster.wmkeyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="50"></a>
+<a href="https://github.com/wasi-master/wmkeyboard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" height="50"></a>
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/wasi-master/wmkeyboard"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" height="50"></a>
 </p>
 
 
@@ -29,7 +29,7 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 1. নিচের বাটনে ক্লিক করে বর্ণ অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন।
 2. বর্ণ অ্যাপের "Keyboard Layouts" মেনু থেকে "ক্ষিপ্র" সিলেক্ট করুন।
 
-[<img height="50" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
+[<img height="38" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
 
 > [!WARNING]
 বর্ণতে ক্ষিপ্র এক ভার্শন পিছনে থাকতে পারে, যেহেতু ক্ষিপ্র-কে ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।  
