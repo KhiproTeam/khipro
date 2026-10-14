@@ -26,7 +26,9 @@ weight: 30
 ![image](image3.png)  
 
 <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a>ের সেটিংস ওপেন হলে প্রথমেই দেখা যাবে "Dictionaries & Input Methods" ট্যাব। সেখান থেকে বাংলার জন্য **একটা ডিকশনারি** সিলেক্ট করতে হবে। বাংলার জন্য তিনটা ডিকশনারি পাবেন; যেকোনো একটি সিলেক্ট করলেই হবে।  
-এরপর <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a>ের মধ্যেই **ইনপুট মেথড** হিসেবে ক্ষিপ্রকে সিলেক্ট করতে হবে এবং অন্যান্য ইনপুট মেথড রিমুভ করতে পারেন। নিচের ছবি দ্রষ্টব্য...
+এরপর <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a>ের মধ্যেই **ইনপুট মেথড** হিসেবে ক্ষিপ্রকে সিলেক্ট করতে হবে।  
+একাধিক ভার্শনের ক্ষিপ্র লেআউটও চাইলে একসাথে ব্যবহার করা যায়।  
+নিচের ছবি দ্রষ্টব্য...
 
 ![image](image4.png)  
 
@@ -37,7 +39,7 @@ weight: 30
 ![image](image5.png)  
 
 > [!IMPORTANT]  
- "Avoid using the forward_key_event() function" এটাতে টিকচিহ্ন ✓ দিতে হবে যদি <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a>ে কমিট করার সময় হঠাৎ একা একা ইনসার্শন পয়েন্টার (insertion pointer) নড়ে যাওয়ার ইশুর সম্মুখীন হন। নাহলে দরকার নেই।
+ "Avoid using the forward_key_event() function" এটাতে টিকচিহ্ন ✓ দিতে হবে কেবল যদি <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a>ে কমিট করার সময় হঠাৎ একা একা ইনসার্শন পয়েন্টার (insertion pointer) নড়ে যাওয়ার ইশুর সম্মুখীন হন। নাহলে দরকার নেই।
 
 এরপরে "Keybindings" ট্যাবে যেতে হবে। সেখানে:
 1. Commit এর জন্য Enter, 
