@@ -19,7 +19,7 @@ weight: 30
 
 ![image](image1.png)  
 
-যদি আপনার ডিস্ট্রোতে সেটিংস থেকে আইবাসের সেটিংস কনফিগার করা না যায় তবে ibus-preferences থেকে কাজটি করতে হবে। অ্যাপ মেনু -তে `ibus preferences` নামে, অথবা টার্মিনালে `ibus-setup` কমান্ড দিয়ে লঞ্চ করতে পারবেন এবং সেখান থেকে <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a> কিংবা `khipro-m17n` সিলেক্ট করতে পারবেন।
+যদি আপনার ডিস্ট্রোতে সেটিংস থেকে আইবাসের সেটিংস কনফিগার করা না যায় তবে ibus-preferences থেকে কাজটি করতে হবে। অ্যাপ মেনু -তে `ibus preferences` নামে, অথবা টার্মিনালে `ibus-setup` কমান্ড দিয়ে লঞ্চ করতে পারবেন এবং সেখান থেকে <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a> সিলেক্ট করতে পারবেন।
 
 তারপরে সেখান থেকে <a href="https://mike-fabian.github.io/ibus-typing-booster/" target="_blank" rel="noopener noreferrer">টাইপিং বুস্টার</a>ের preferences কিংবা সেটিংসে যেতে হবে। নিচের ছবি দ্রষ্টব্য...
 
