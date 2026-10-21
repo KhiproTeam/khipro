@@ -1,6 +1,6 @@
 ---
 title: "অ্যান্ড্রয়েডে Khipro Compositional Layout"
-description: "HeliBoard ও Borno Android এ ক্ষিপ্র লেআউট।"
+description: "HeliBoard, Borno Android ও WM Keyboard-এ ক্ষিপ্র লেআউট।"
 
 weight: 25
 ---
@@ -39,7 +39,7 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 
 # HeliBoard
 
-হেলিবোর্ড একটি ওপেনসোর্স আন্ড্রয়েড কিবোর্ড অ্যাপ। আমাদের কমিউনিটির হাত ধরে ক্ষিপ্র লেআউট এই কিবোর্ডে যুক্ত হয়েছে। হেলিবোর্ডের `3.6-beta1` ও পরবর্তী সকল Beta ও Stable রিলিস থেকে ক্ষিপ্র লেআউট ব্যবহার করা যাবে। নিচের লিংক থেকে হেলিবোর্ড ডাউনলোড করতে পারবেন।
+হেলিবোর্ড একটি ওপেনসোর্স আন্ড্রয়েড কিবোর্ড অ্যাপ। আমাদের কমিউনিটির হাত ধরে ক্ষিপ্র লেআউট এই কিবোর্ডে যুক্ত হয়েছে। নিচের লিংক থেকে হেলিবোর্ড ডাউনলোড করতে পারবেন।
 
 
 > [!CAUTION]  
@@ -48,12 +48,11 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 ২. স্পেস ছাড়া ব্যাকস্পেস চাপলে মাঝে মাঝে একাধিক কমিট হয়ে যায়, এটাও হেলিবোর্ড এর সমস্যা। এটা অতিসত্বর ফিক্স করা হবে।  
 ৩. এছাড়া হেলিবোর্ডের ক্ষিপ্র এক ভার্শন পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।
 
-
-- [হেলিবোর্ড GitHub রিলিস পেইজ](https://github.com/HeliBorg/HeliBoard/releases)  
-- [F-Droid-এ হেলিবোর্ড](https://f-droid.org/packages/helium314.keyboard)
+<a href="https://f-droid.org/packages/helium314.keyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" width="15%"></a>
+<a href="https://github.com/HeliBorg/HeliBoard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" width="15%"></a>
 
 > [!NOTE]  
-ক্ষিপ্র-র টাচস্ক্রিনে অ্যাডাপ্টেশন গাইডলাইন মোতাবেক হেলিবোর্ডে ক্ষিপ্র লেআউট যুক্ত করা হয়েছে। [গাইডলাইনটি দেখতে এখানে ক্লিক করুন](https://khipro.khiproteam.com/documentation/#tchshkrn-ojdptshnr-jnj-shjshn)।
+ক্ষিপ্র-র টাচস্ক্রিনে অ্যাডাপ্টেশন গাইডলাইন মোতাবেক এই সকল কিবোর্ডে ক্ষিপ্র লেআউট যুক্ত করা হয়েছে। [গাইডলাইনটি দেখতে এখানে ক্লিক করুন](https://khipro.khiproteam.com/documentation/#tchshkrn-ojdptshnr-jnj-shjshn)।
 
 
 কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: [https://khipro.khiproteam.com/#community](https://khipro.khiproteam.com/#community)
