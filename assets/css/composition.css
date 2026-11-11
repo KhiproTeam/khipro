@@ -3,27 +3,34 @@
 :root,
 [data-theme="light"],
 [data-actual-theme="light"] {
-  /* Accent */
-  --color-accent-1: #904347;
-  --color-accent-2: #c1656a;
+  /* Accent — KhiproTeam central palette (khiproteam.com, issue #75) */
+  --color-accent-1: #0a6b5e;
+  --color-accent-2: #27c4ae;
 
   /* Base */
-  --color-bg-1: #ffffff;
-  --color-bg-2: #f9f9f9;
-  --color-text: #000000;
-  --color-text-muted: #666666;
+  --color-bg-1: #f5fdfb;
+  --color-bg-2: #edf9f7;
+  --color-text: #062520;
+  --color-text-muted: #285e57;
 
   /* Semantic */
   --color-primary: var(--color-accent-1);
   --color-primary-light: var(--color-accent-2);
-  --color-primary-dark: #7a383c;
+  --color-primary-dark: #0f9e8a;
   --color-secondary: var(--color-accent-2);
 
   /* Backgrounds */
   --color-body-bg: var(--color-bg-1);
-  --color-card-bg: var(--color-bg-2);
-  --color-border-light: rgba(0, 0, 0, 0.1);
-  --color-border-medium: rgba(0, 0, 0, 0.15);
+  --color-card-bg: #ffffff;
+  --color-border-light: rgba(10, 107, 94, 0.13);
+  --color-border-medium: rgba(10, 107, 94, 0.22);
+
+  /* Header / footer surfaces (central site) */
+  --color-header-bg: #ffffff;
+  --color-header-border: rgba(39, 196, 174, 0.2);
+  --color-nav-hover: #0f9e8a;
+  --color-footer-bg: #062520;
+  --color-footer-text: rgba(255, 255, 255, 0.5);
 
   /* Text */
   --color-text-primary: var(--color-text);
@@ -58,11 +65,11 @@
   --transition-base: 300ms ease;
   --transition-slow: 500ms ease;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  /* Shadows (teal-tinted, per central site) */
+  --shadow-sm: 0 1px 2px rgba(10, 107, 94, 0.06);
+  --shadow-md: 0 4px 12px rgba(10, 107, 94, 0.08);
+  --shadow-lg: 0 8px 24px rgba(10, 107, 94, 0.1);
+  --shadow-xl: 0 8px 24px rgba(10, 107, 94, 0.1);
 
   /* Alert Colors */
   --color-alert-note: #1f6feb;
@@ -84,23 +91,30 @@
 
 [data-theme="dark"],
 [data-actual-theme="dark"] {
-  /* Base */
-  --color-bg-1: #181818;
-  --color-bg-2: #212121;
-  --color-text: #ffffff;
-  --color-text-muted: #a0a0a0;
+  /* Base (central dark palette) */
+  --color-bg-1: #071c19;
+  --color-bg-2: #0d2c28;
+  --color-text: #d8f5f0;
+  --color-text-muted: #8dd9ce;
 
   /* Semantic */
   --color-primary: var(--color-accent-2);
   --color-primary-light: var(--color-accent-1);
-  --color-primary-dark: #d4757a;
+  --color-primary-dark: #5de0cf;
   --color-secondary: var(--color-accent-1);
 
   /* Backgrounds */
   --color-body-bg: var(--color-bg-1);
   --color-card-bg: var(--color-bg-2);
-  --color-border-light: rgba(255, 255, 255, 0.1);
-  --color-border-medium: rgba(255, 255, 255, 0.15);
+  --color-border-light: rgba(39, 196, 174, 0.12);
+  --color-border-medium: rgba(39, 196, 174, 0.22);
+
+  /* Header / footer surfaces (central site) */
+  --color-header-bg: rgba(7, 28, 25, 0.9);
+  --color-header-border: rgba(39, 196, 174, 0.15);
+  --color-nav-hover: #5de0cf;
+  --color-footer-bg: #030e0d;
+  --color-footer-text: rgba(255, 255, 255, 0.35);
 
   /* Text */
   --color-text-primary: var(--color-text);
@@ -114,10 +128,10 @@
   --color-link-hover: #79b8ff;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.3);
 
   /* Alert Colors */
   --color-alert-note: #58a6ff;

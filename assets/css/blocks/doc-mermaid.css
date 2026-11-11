@@ -10,7 +10,7 @@
   padding: var(--space-lg);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
-  font-family: "July", "Baloo Da 2", sans-serif;
+  font-family: "Inter", "Noto Serif Bengali", sans-serif;
 }
 
 .doc-article__content .mermaid svg {
@@ -57,7 +57,7 @@
 .doc-article__content .mermaid .nodeLabel,
 .doc-article__content .mermaid .cluster-label span,
 .doc-article__content .mermaid :is(.nodeLabel, .edgeLabel, .cluster-label) :is(p, span, div) {
-  font-family: "JetBrains Mono", "July", "Baloo Da 2", sans-serif;
+  font-family: "JetBrains Mono", "Inter", "Noto Serif Bengali", sans-serif;
 }
 
 [data-theme="light"] .doc-article__content .mermaid .edgeLabel,

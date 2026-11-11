@@ -6,8 +6,9 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--color-primary);
-  box-shadow: var(--shadow-md);
+  background-color: var(--color-header-bg);
+  border-bottom: 1px solid var(--color-header-border);
+  box-shadow: var(--shadow-sm);
 }
 
 /* Mobile: Move header to bottom */
@@ -62,20 +63,24 @@
 .nav__home {
   display: flex;
   align-items: center;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-size: 1.25rem;
   transition: color var(--transition-fast);
 }
 
 .nav__home:hover {
-  color: #ffffff;
+  color: var(--color-nav-hover);
   text-decoration: none;
 }
 
-/* Homepage home-slot links to the KhiproTeam central page (issues #40/#72).
-   The .nav__home--central class is a styling hook for the deferred team-logo
-   swap; until then it looks identical to the regular home button. */
+/* Homepage home-slot links to the KhiproTeam central page with the team
+   logo (issues #40/#72) */
+.nav__home--central .nav__home-logo {
+  display: block;
+  height: 1.75rem;
+  width: auto;
+}
 
 .nav__menu {
   display: flex;
@@ -86,7 +91,7 @@
 }
 
 .nav__link {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-weight: 500;
   padding: var(--space-sm) var(--space-md);
@@ -102,12 +107,12 @@
   left: 0;
   width: 0;
   height: 0.125rem;
-  background-color: #ffffff;
+  background-color: var(--color-accent-2);
   transition: width var(--transition-base);
 }
 
 .nav__link:hover {
-  color: #ffffff;
+  color: var(--color-nav-hover);
   text-decoration: none;
 }
 
@@ -138,18 +143,18 @@ html[data-theme="system"] .theme-toggle [data-theme-icon-system] {
   align-items: center;
   justify-content: center;
   padding: var(--space-sm);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-secondary);
   border-radius: var(--radius-md);
   transition: color var(--transition-fast);
 }
 
 .theme-toggle:hover {
-  color: #ffffff;
+  color: var(--color-nav-hover);
 }
 
 /* Mobile Navigation */
 .nav--mobile {
-  background-color: var(--color-primary);
+  background-color: var(--color-card-bg);
 }
 
 .nav__mobile-inner {
@@ -172,7 +177,7 @@ html[data-theme="system"] .theme-toggle [data-theme-icon-system] {
   align-items: center;
   justify-content: center;
   padding: var(--space-sm);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-secondary);
   font-size: 1.25rem;
 }
 
@@ -206,7 +211,7 @@ html[data-theme="system"] .theme-toggle [data-theme-icon-system] {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-card-bg);
   padding: var(--space-md);
   max-height: 0;
   overflow: hidden;
@@ -235,17 +240,17 @@ html[data-theme="system"] .theme-toggle [data-theme-icon-system] {
   display: block;
   padding: var(--space-md) var(--space-lg);
   text-align: center;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-secondary);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  border: 1px solid var(--color-border-light);
   border-radius: var(--radius-md);
   font-weight: 500;
   transition: all var(--transition-base);
 }
 
 .mobile-menu__link:hover {
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-nav-hover);
+  background-color: var(--color-bg-2);
   text-decoration: none;
 }

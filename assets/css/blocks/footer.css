@@ -1,8 +1,8 @@
 /* Footer */
 
 .footer {
-  background-color: var(--color-primary);
-  color: #ffffff;
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
   padding-block: var(--space-lg);
   text-align: center;
 }
@@ -12,7 +12,7 @@
 }
 
 .footer__content a {
-  color: #ffffff;
+  color: var(--color-footer-text);
   text-decoration: underline;
   text-underline-offset: 2px;
 }

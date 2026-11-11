@@ -49,7 +49,7 @@
 
 .repo-card:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 6px 14px rgba(144, 67, 71, 0.1);
+  box-shadow: 0 6px 14px rgba(10, 107, 94, 0.1);
   transform: translateY(-3px);
   text-decoration: none;
 }
@@ -81,7 +81,7 @@
   color: #ffffff;
   font-size: 0.9375rem;
   flex-shrink: 0;
-  box-shadow: 0 3px 8px rgba(144, 67, 71, 0.22);
+  box-shadow: 0 3px 8px rgba(10, 107, 94, 0.22);
 }
 
 .repo-card__name {

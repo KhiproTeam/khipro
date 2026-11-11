@@ -125,7 +125,7 @@
 
 .install-card:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 6px 14px rgba(144, 67, 71, 0.1);
+  box-shadow: 0 6px 14px rgba(10, 107, 94, 0.1);
   transform: translateY(-2px);
 }
 
@@ -147,7 +147,7 @@
   justify-content: center;
   font-size: 1rem;
   flex-shrink: 0;
-  box-shadow: 0 3px 8px rgba(144, 67, 71, 0.22);
+  box-shadow: 0 3px 8px rgba(10, 107, 94, 0.22);
 }
 
 .install-card__title {
@@ -175,7 +175,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 3px 10px rgba(144, 67, 71, 0.22);
+  box-shadow: 0 3px 10px rgba(10, 107, 94, 0.22);
   transition: background-color var(--transition-base), transform var(--transition-fast);
 }
 

@@ -55,7 +55,7 @@
 .community-card:hover {
   border-color: var(--color-primary);
   transform: translateY(-3px);
-  box-shadow: 0 6px 22px rgba(144, 67, 71, 0.09);
+  box-shadow: 0 6px 22px rgba(10, 107, 94, 0.09);
   text-decoration: none;
 }
 

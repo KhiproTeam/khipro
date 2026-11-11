@@ -2,15 +2,6 @@
    DOC TYPOGRAPHY - Font Declarations & Sizes
    ============================================ */
 
-/* July Font Face Declaration */
-{{ $fontUrl := "fonts/July.ttf" | relURL }}
-@font-face {
-  font-family: "July";
-  src: url("{{ $fontUrl }}") format("truetype");
-  font-weight: normal;
-  font-display: swap;
-}
-
 /* JetBrains Mono — self-hosted so mermaid/code monospace does not depend on
    Google Fonts availability (issue #56). Variable font, weights 100-900. */
 {{ $jbmLatin := "fonts/jetbrainsmono-latin.woff2" | relURL }}
@@ -33,13 +24,13 @@
 }
 
 /* ============================================
-   JULY FONT - EXCLUSIVELY FOR ARTICLE CONTENT
+   DOC TYPOGRAPHY - CENTRAL SITE FONT PAIR
    ============================================ */
 
 /*
- * July font is used throughout documentation
- * Including: article header, content, alerts, navigation
- * Site-wide elements (main header, footer) keep Baloo Da 2
+ * Docs use the same font pair as the KhiproTeam central site
+ * (khiproteam.com): Inter for Latin, Noto Serif Bengali for Bengali.
+ * The old self-hosted "July" font was retired (issue #75).
  */
 
 .doc-article__type,
@@ -68,7 +59,7 @@
 .doc-alert__content,
 .doc-alert__content strong,
 .doc-alert__content p {
-  font-family: "July", "Baloo Da 2", sans-serif;
+  font-family: "Inter", "Noto Serif Bengali", sans-serif;
 }
 
 /* July font sizes - matching tmp original settings */
@@ -77,13 +68,13 @@
 .doc-article__content ol,
 .doc-article__content li,
 .doc-article__content blockquote {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
 .doc-article__content td,
 .doc-article__content th {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .doc-article__content h1 {
@@ -168,7 +159,7 @@
 }
 
 .doc-article__description {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 /* ============================================
@@ -185,7 +176,7 @@
 }
 
 .doc-article__content blockquote {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -206,17 +197,17 @@
 }
 
 .doc-alert__content {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
 .doc-alert__content strong {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .doc-alert__content p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
