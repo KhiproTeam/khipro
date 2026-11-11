@@ -1,9 +1,10 @@
 {{ define "main" }}
-{{ $hero := site.Data.hero }}
-{{ $faq := site.Data.faq }}
-{{ $installation := site.Data.installation }}
-{{ $repositories := site.Data.repositories }}
-{{ $community := site.Data.community }}
+{{ $hero := hugo.Data.hero }}
+{{ $faq := hugo.Data.faq }}
+{{ $installation := hugo.Data.installation }}
+{{ $repositories := hugo.Data.repositories }}
+{{ $community := hugo.Data.community }}
+{{ $variants := hugo.Data.variants }}
 
 <!-- Hero Section -->
 <section id="home" class="section">
@@ -38,8 +39,36 @@
     </div>
 </section>
 
+<!-- Variants Section -->
+<section id="variants" class="section section--alt">
+    <div class="u-container">
+        <header class="section-header">
+            <h2 class="section-header__title">{{ $variants.title }}</h2>
+            {{ with $variants.sub_heading }}
+            <p class="section-header__description">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        <div class="variants-grid">
+            {{ range $variants.variants }}
+            <div class="variant-card variant-card--{{ .theme }}">
+                <img src="{{ .logo | relURL }}" alt="{{ .logo_alt }}" class="variant-card__logo" loading="lazy">
+                <h3 class="variant-card__name">{{ .name }}</h3>
+                <div class="variant-card__tagline">{{ .tagline }}</div>
+                <p class="variant-card__desc">{{ .description | markdownify }}</p>
+                <div class="variant-card__actions">
+                    <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="variant-card__btn">
+                        {{ .button_text }}
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 <!-- FAQ Section -->
-<section id="faq" class="section section--alt">
+<section id="faq" class="section">
     <div class="u-container">
         <header class="section-header">
             <h2 class="section-header__title">{{ $faq.title }}</h2>
@@ -84,7 +113,7 @@
 </section>
 
 <!-- Installation Section -->
-<section id="installation" class="section">
+<section id="installation" class="section section--alt">
     <div class="u-container">
         <header class="section-header">
             <h2 class="section-header__title">{{ $installation.title }}</h2>
@@ -142,7 +171,7 @@
 </section>
 
 <!-- Repositories Section -->
-<section id="repositories" class="section section--alt">
+<section id="repositories" class="section">
     <div class="u-container">
         <header class="section-header">
             <h2 class="section-header__title">{{ $repositories.title }}</h2>
@@ -173,7 +202,7 @@
 </section>
 
 <!-- Community Section -->
-<section id="community" class="section">
+<section id="community" class="section section--alt">
     <div class="u-container">
         <header class="section-header">
             <h2 class="section-header__title">{{ $community.title }}</h2>

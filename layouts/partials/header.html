@@ -3,13 +3,13 @@
         <div class="u-container">
             <div class="nav__inner">
                 <!-- Home -->
-                <a href="{{ site.Data.header.home_link | relURL }}" class="nav__home" aria-label="{{ site.Data.header.home_aria_label }}">
-                    <i class="{{ site.Data.header.home_icon }}"></i>
+                <a href="{{ hugo.Data.header.home_link | relURL }}" class="nav__home" aria-label="{{ hugo.Data.header.home_aria_label }}">
+                    <i class="{{ hugo.Data.header.home_icon }}"></i>
                 </a>
 
                 <!-- Menu -->
                 <ul class="nav__menu">
-                    {{ range site.Data.header.menu_items }}
+                    {{ range hugo.Data.header.menu_items }}
                     <li class="nav__item">
                         <a href="{{ .url | relURL }}" class="nav__link">{{ .name }}</a>
                     </li>
@@ -20,11 +20,11 @@
                 <button
                     class="theme-toggle"
                     type="button"
-                    aria-label="{{ site.Data.header.dark_mode_aria_label }}"
+                    aria-label="{{ hugo.Data.header.dark_mode_aria_label }}"
                     data-theme-toggle>
-                    <i class="{{ site.Data.header.dark_mode_icon }}" data-theme-icon-dark></i>
-                    <i class="{{ site.Data.header.light_mode_icon }}" data-theme-icon-light></i>
-                    <i class="{{ site.Data.header.system_mode_icon }}" data-theme-icon-system></i>
+                    <i class="{{ hugo.Data.header.dark_mode_icon }}" data-theme-icon-dark></i>
+                    <i class="{{ hugo.Data.header.light_mode_icon }}" data-theme-icon-light></i>
+                    <i class="{{ hugo.Data.header.system_mode_icon }}" data-theme-icon-system></i>
                 </button>
             </div>
         </div>
@@ -37,27 +37,27 @@
             <button
                 class="theme-toggle"
                 type="button"
-                aria-label="{{ site.Data.header.dark_mode_aria_label }}"
+                aria-label="{{ hugo.Data.header.dark_mode_aria_label }}"
                 data-theme-toggle>
-                <i class="{{ site.Data.header.dark_mode_icon }}" data-theme-icon-dark></i>
-                <i class="{{ site.Data.header.light_mode_icon }}" data-theme-icon-light></i>
-                <i class="{{ site.Data.header.system_mode_icon }}" data-theme-icon-system></i>
+                <i class="{{ hugo.Data.header.dark_mode_icon }}" data-theme-icon-dark></i>
+                <i class="{{ hugo.Data.header.light_mode_icon }}" data-theme-icon-light></i>
+                <i class="{{ hugo.Data.header.system_mode_icon }}" data-theme-icon-system></i>
             </button>
 
             <!-- Home -->
-            <a href="{{ site.Data.header.home_link | relURL }}" class="nav__home" aria-label="{{ site.Data.header.home_aria_label }}">
-                <i class="{{ site.Data.header.home_icon }}"></i>
+            <a href="{{ hugo.Data.header.home_link | relURL }}" class="nav__home" aria-label="{{ hugo.Data.header.home_aria_label }}">
+                <i class="{{ hugo.Data.header.home_icon }}"></i>
             </a>
 
             <!-- Menu Toggle -->
             <button
                 class="mobile-menu-toggle"
                 type="button"
-                aria-label="{{ site.Data.header.mobile_menu_aria_label }}"
+                aria-label="{{ hugo.Data.header.mobile_menu_aria_label }}"
                 aria-expanded="false"
                 aria-controls="mobile-menu"
                 data-mobile-menu-toggle>
-                <i class="{{ site.Data.header.mobile_menu_icon }}"></i>
+                <i class="{{ hugo.Data.header.mobile_menu_icon }}"></i>
             </button>
         </div>
 
@@ -66,7 +66,7 @@
             <div class="mobile-menu__overlay" data-mobile-menu-overlay></div>
             <div class="mobile-menu__panel">
                 <ul class="mobile-menu__list">
-                    {{ range site.Data.header.menu_items }}
+                    {{ range hugo.Data.header.menu_items }}
                     <li class="mobile-menu__item">
                         <a href="{{ .url | relURL }}" class="mobile-menu__link">{{ .name }}</a>
                     </li>

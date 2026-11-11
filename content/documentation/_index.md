@@ -2,6 +2,9 @@
 title: "ক্ষিপ্র কিবোর্ড কনসেপ্ট ও ব্যবহার-নির্দেশিকা"
 description: "ক্ষিপ্র কিবোর্ডের সম্পূর্ণ ব্যবহার নির্দেশিকা এবং কনসেপ্ট। দ্রুততম বাংলা টাইপিংয়ের জন্য ক্ষিপ্র কিবোর্ড লেআউট শিখুন।"
 url: "/documentation/"
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 
 ক্ষিপ্র [৩৬তম সংস্করণ](https://github.com/rank-coder/khipro-m17n/releases): (তারিখ পরে লেখা হবে)

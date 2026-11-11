@@ -1,0 +1,120 @@
+/* Variants */
+
+.variants-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-lg);
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .variants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Per-variant identity colors (match the official logos) */
+.variant-card--classic {
+  --variant-color: #904347;
+  --variant-color-soft: rgba(144, 67, 71, 0.1);
+  --variant-color-shadow: rgba(144, 67, 71, 0.25);
+}
+
+.variant-card--dark {
+  --variant-color: #461163;
+  --variant-color-soft: rgba(70, 17, 99, 0.1);
+  --variant-color-shadow: rgba(70, 17, 99, 0.25);
+}
+
+/* Dark mode: swap to lightened tints (same pattern as --color-primary in
+   composition.css) so taglines stay readable on dark card backgrounds */
+[data-theme="dark"] .variant-card--classic,
+[data-actual-theme="dark"] .variant-card--classic {
+  --variant-color: #c1656a;
+  --variant-color-soft: rgba(193, 101, 106, 0.12);
+  --variant-color-shadow: rgba(193, 101, 106, 0.25);
+}
+
+[data-theme="dark"] .variant-card--dark,
+[data-actual-theme="dark"] .variant-card--dark {
+  --variant-color: #a678d8;
+  --variant-color-soft: rgba(166, 120, 216, 0.12);
+  --variant-color-shadow: rgba(166, 120, 216, 0.25);
+}
+
+.variant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+  padding: 2rem 1.75rem;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.variant-card:hover {
+  border-color: var(--variant-color);
+  box-shadow: 0 6px 14px var(--variant-color-shadow);
+  transform: translateY(-2px);
+}
+
+.variant-card__logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+.variant-card__name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.variant-card__tagline {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.875rem;
+  border-radius: 9999px;
+  background-color: var(--variant-color-soft);
+  color: var(--variant-color);
+}
+
+.variant-card__desc {
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  max-width: 26rem;
+}
+
+.variant-card__actions {
+  margin-top: auto;
+  padding-top: var(--space-sm);
+}
+
+.variant-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background-color: var(--variant-color);
+  color: #ffffff;
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.variant-card__btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--variant-color-shadow);
+}
+
+.variant-card__btn:focus-visible {
+  outline: 2px solid var(--variant-color);
+  outline-offset: 2px;
+}

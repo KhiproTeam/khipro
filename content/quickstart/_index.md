@@ -2,6 +2,9 @@
 title: "ক্ষিপ্র কুইকস্টার্ট গাইড | ক্ষিপ্রসূচন"
 description: "আজ থেকেই ক্ষিপ্র দিয়ে লেখা শুরু করতে এই সংক্ষিপ্ত গাইডটি পড়ে ফেলুন"
 url: "/quickstart/"
+sitemap:
+  changefreq: monthly
+  priority: 0.7
 ---
 
 

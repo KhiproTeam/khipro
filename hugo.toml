@@ -1,17 +1,26 @@
 baseURL = "https://khipro.khiproteam.com/"
-languageCode = "bn"
+locale = "bn"
 title = "ক্ষিপ্র কিবোর্ড"
 defaultContentLanguage = "bn"
+
+canonifyURLs = true
+relativeURLs = false
+
+# Root-level keys must stay above any [table] header — previously these sat
+# under [params] and were silently ignored as params.
+disableKinds = ["taxonomy", "term"]
+
+# Automatic lastmod dates from git history (used by the generated sitemap)
+enableGitInfo = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
 
 [params]
 description = "দ্রুততম বাংলা কিবোর্ড"
 keywords = "বাংলা কিবোর্ড, ক্ষিপ্র কিবোর্ড, বাংলা টাইপিং, Bengali keyboard, Khipro, Bangla typing"
 author = "KhiproTeam"
-
-canonifyURLs = true
-relativeURLs = false
-
-disableKinds = ["sitemap"]
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -33,6 +42,4 @@ ordered = false
 [outputs]
 home = ["HTML"]
 section = ["HTML"]
-taxonomy = ["HTML"]
-term = ["HTML"]
 page = ["HTML"]
