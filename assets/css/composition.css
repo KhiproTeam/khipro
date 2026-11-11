@@ -32,6 +32,10 @@
   /* Icon */
   --color-icon-primary: var(--color-accent-1);
 
+  /* Links (issue #64: all hyperlinks blue in both modes) */
+  --color-link: #1f6feb;
+  --color-link-hover: #1a5fd0;
+
   /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -104,6 +108,10 @@
 
   /* Icon */
   --color-icon-primary: var(--color-accent-2);
+
+  /* Links (issue #64: lighter blue for dark backgrounds, WCAG AA) */
+  --color-link: #58a6ff;
+  --color-link-hover: #79b8ff;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);

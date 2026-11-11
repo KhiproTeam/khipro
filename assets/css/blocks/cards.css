@@ -59,13 +59,13 @@
 /* Links */
 .link,
 .external-link {
-  color: var(--color-primary);
+  color: var(--color-link);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 .link:hover,
 .external-link:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-link-hover);
   text-decoration: none;
 }
