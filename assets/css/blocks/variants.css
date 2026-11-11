@@ -17,8 +17,8 @@
 /* Per-variant identity colors (match the official logos) */
 .variant-card--classic {
   --variant-color: #904347;
-  --variant-color-soft: rgba(10, 107, 94, 0.1);
-  --variant-color-shadow: rgba(10, 107, 94, 0.25);
+  --variant-color-soft: rgba(144, 67, 71, 0.1);
+  --variant-color-shadow: rgba(144, 67, 71, 0.25);
 }
 
 .variant-card--dark {
@@ -32,8 +32,8 @@
 [data-theme="dark"] .variant-card--classic,
 [data-actual-theme="dark"] .variant-card--classic {
   --variant-color: #c1656a;
-  --variant-color-soft: rgba(39, 196, 174, 0.12);
-  --variant-color-shadow: rgba(39, 196, 174, 0.25);
+  --variant-color-soft: rgba(193, 101, 106, 0.12);
+  --variant-color-shadow: rgba(193, 101, 106, 0.25);
 }
 
 [data-theme="dark"] .variant-card--dark,
