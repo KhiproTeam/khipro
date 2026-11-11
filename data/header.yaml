@@ -29,3 +29,10 @@ menu_items:
   - name: "কমিউনিটি"
     url: "#community"
     weight: 35
+
+# Homepage home-slot links to the KhiproTeam central page (issues #40/#72);
+# other pages keep the normal home button. Icon stays fa-home until the
+# team logo swap (deferred).
+central_page_link: "https://khiproteam.com/"
+central_page_aria_label: "ক্ষিপ্রটিম"
+central_page_icon: "fas fa-home"

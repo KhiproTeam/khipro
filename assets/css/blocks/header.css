@@ -73,6 +73,10 @@
   text-decoration: none;
 }
 
+/* Homepage home-slot links to the KhiproTeam central page (issues #40/#72).
+   The .nav__home--central class is a styling hook for the deferred team-logo
+   swap; until then it looks identical to the regular home button. */
+
 .nav__menu {
   display: flex;
   align-items: center;

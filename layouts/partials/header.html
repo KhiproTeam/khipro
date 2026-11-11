@@ -2,10 +2,17 @@
     <nav class="nav nav--desktop" role="navigation" aria-label="প্রধান নেভিগেশন">
         <div class="u-container">
             <div class="nav__inner">
-                <!-- Home -->
+                <!-- Home: on the homepage this slot links to the KhiproTeam
+                     central page in team colors (issues #40/#72) -->
+                {{ if .IsHome }}
+                <a href="{{ hugo.Data.header.central_page_link }}" class="nav__home nav__home--central" aria-label="{{ hugo.Data.header.central_page_aria_label }}" title="{{ hugo.Data.header.central_page_aria_label }}">
+                    <i class="{{ hugo.Data.header.central_page_icon }}"></i>
+                </a>
+                {{ else }}
                 <a href="{{ hugo.Data.header.home_link | relURL }}" class="nav__home" aria-label="{{ hugo.Data.header.home_aria_label }}">
                     <i class="{{ hugo.Data.header.home_icon }}"></i>
                 </a>
+                {{ end }}
 
                 <!-- Menu -->
                 <ul class="nav__menu">
@@ -44,10 +51,16 @@
                 <i class="{{ hugo.Data.header.system_mode_icon }}" data-theme-icon-system></i>
             </button>
 
-            <!-- Home -->
+            <!-- Home: central-page link on homepage (issues #40/#72) -->
+            {{ if .IsHome }}
+            <a href="{{ hugo.Data.header.central_page_link }}" class="nav__home nav__home--central" aria-label="{{ hugo.Data.header.central_page_aria_label }}" title="{{ hugo.Data.header.central_page_aria_label }}">
+                <i class="{{ hugo.Data.header.central_page_icon }}"></i>
+            </a>
+            {{ else }}
             <a href="{{ hugo.Data.header.home_link | relURL }}" class="nav__home" aria-label="{{ hugo.Data.header.home_aria_label }}">
                 <i class="{{ hugo.Data.header.home_icon }}"></i>
             </a>
+            {{ end }}
 
             <!-- Menu Toggle -->
             <button
