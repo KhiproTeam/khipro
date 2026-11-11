@@ -50,10 +50,13 @@
   stroke-width: 2px;
 }
 
-/* Labels */
+/* Labels — must also target the inner p/span of HTML labels: doc-typography's
+   ".doc-article__content p" rule hits them directly and would override the
+   inherited font (this is why labels rendered in July instead of mono) */
 .doc-article__content .mermaid .edgeLabel,
 .doc-article__content .mermaid .nodeLabel,
-.doc-article__content .mermaid .cluster-label span {
+.doc-article__content .mermaid .cluster-label span,
+.doc-article__content .mermaid :is(.nodeLabel, .edgeLabel, .cluster-label) :is(p, span, div) {
   font-family: "JetBrains Mono", "July", "Baloo Da 2", sans-serif;
 }
 
