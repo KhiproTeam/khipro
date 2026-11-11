@@ -23,5 +23,5 @@ repositories:
     icon: "fab fa-github"
     maintainer_name: "@qomarhsn"
     maintainer_link: "https://github.com/qomarhsn"
-    description: "ক্ষিপ্র-কে যেকোনো অপারেটিং সিস্টেমে ইমপ্লিমেন্টেশনের স্বার্থে ডেভেলপারদের জন্য বানানো একটি বান্ডেলড লাইব্রেরি।"
+    description: "ক্ষিপ্র-কে যেকোনো অপারেটিং সিস্টেমে ইমপ্লিমেন্টেশনের স্বার্থে ডেভেলপারদের জন্য বানানো একটি বান্ডলড লাইব্রেরি। [ডেভেলপার ডকুমেন্টেশন →](/documentation/developers/)"
     repository_link: "https://github.com/KhiproTeam/khipro-library"
