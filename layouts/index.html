@@ -182,20 +182,20 @@
 
         <div class="repo-grid">
             {{ range $index, $item := $repositories.repositories }}
-            <a href="{{ .repository_link }}" target="_blank" rel="noopener noreferrer" class="repo-card{{ if eq $index 0 }} repo-card--full{{ end }}" aria-label="{{ .name }}">
+            <div class="repo-card{{ if eq $index 0 }} repo-card--full{{ end }}">
                 <div class="repo-card__header">
                     <div class="repo-card__left">
                         <div class="repo-card__avatar">
                             <i class="{{ .icon }}" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <div class="repo-card__name">{{ .name }}</div>
-                            <div class="repo-card__maintainer">মেইনটেইনার: {{ .maintainer_name }}</div>
+                            <a href="{{ .repository_link }}" target="_blank" rel="noopener noreferrer" class="repo-card__name">{{ .name }}</a>
+                            <div class="repo-card__maintainer">মেইনটেইনার: <a href="{{ .maintainer_link }}" target="_blank" rel="noopener noreferrer" class="repo-card__maintainer-link">{{ .maintainer_name }}</a></div>
                         </div>
                     </div>
                 </div>
                 <p class="repo-card__desc">{{ .description | markdownify }}</p>
-            </a>
+            </div>
             {{ end }}
         </div>
     </div>

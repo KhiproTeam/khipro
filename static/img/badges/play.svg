@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 646 250" role="img" aria-label="Get it on Google Play">
+  <title>Get it on Google Play</title>
+  <!-- Same geometry as the F-Droid/GitHub/Obtainium badge family:
+       646x250 canvas, badge 563x167 at (41,41), radius 18, 4px grey border -->
+  <rect x="41" y="41" width="563" height="167" rx="18" ry="18" fill="#000000" stroke="#a6a6a6" stroke-width="4"/>
+  <!-- Official multicolor Play triangle (colors from Google's artwork) -->
+  <g transform="translate(49.76,42.95) scale(2.2)">
+    <path d="m36.6 34.4-18.9 20a5 5 0 0 0 7.5 3.1h.1l21.2-12.3-10-10.8Z" style="fill:#ea4335"/>
+    <path d="m55.7 31-9.2-5.3-10.3 9.2 10.3 10.3 9.1-5.2a5 5 0 0 0 0-9Z" style="fill:#fbbc04"/>
+    <path d="m17.7 16.4-.1 1.4V53l.1 1.3L37.2 35 17.7 16.4Z" style="fill:#4285f4"/>
+    <path d="m36.7 35.4 9.8-9.7-21.2-12.3a5.1 5.1 0 0 0-7.6 3s19 19 19 19Z" style="fill:#34a853"/>
+  </g>
+  <text x="222" y="89" font-family="'DejaVu Sans', Verdana, Geneva, sans-serif" font-size="30" letter-spacing="7" fill="#ffffff">GET IT ON</text>
+  <text x="222" y="164" font-family="Roboto, 'DejaVu Sans', Arial, sans-serif" font-size="58" font-weight="700" fill="#ffffff">Google Play</text>
+</svg>

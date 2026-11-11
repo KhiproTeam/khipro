@@ -196,6 +196,25 @@
   margin: var(--space-md) 0;
 }
 
+/* Linked images (store badges, download buttons) flow inline on one row
+   instead of stacking — the base img reset makes them block (issue #74).
+   Lightbox ignores images inside links, so this only affects badges. */
+.doc-article__content a > img {
+  display: inline-block;
+  margin: var(--space-sm) var(--space-md) var(--space-sm) 0;
+  vertical-align: middle;
+}
+
+/* Store badges share one height so mixed aspect ratios (Play 478x142 vs
+   F-Droid/GitHub/Obtainium 646x250) line up evenly. No extra rounding or
+   shadow — the official artwork has its own corners and border */
+.doc-article__content img.store-badge {
+  height: 48px;
+  width: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* Article Footer */
 .doc-article__footer {
   padding: var(--space-lg);

@@ -13,13 +13,10 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 "An open source multilingual Android keyboard with prediction, glide typing, transliteration, emoji search and a 75+ tool toolbox that all run on the phone and never phone home."
 
 
-<a href="https://play.google.com/store/apps/details?id=com.wasimaster.wmkeyboard&pcampaignid=web_share" >
-<img src = "GetItOnGooglePlay_Badge_Web_color_English.width-1440.png" width="15%" alt="Get it on PlayStore">
-</a>
-<br/>
-<a href="https://f-droid.org/packages/com.wasimaster.wmkeyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" width="15%"></a>
-<a href="https://github.com/wasi-master/wmkeyboard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" width="15%"></a>
-<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/wasi-master/wmkeyboard"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" width="15%"></a>
+<a href="https://play.google.com/store/apps/details?id=com.wasimaster.wmkeyboard&pcampaignid=web_share"><img src="/img/badges/play.svg" class="store-badge" alt="Get it on Google Play"></a>
+<a href="https://f-droid.org/packages/com.wasimaster.wmkeyboard/"><img src="/img/badges/fdroid.png" alt="Get it on F-Droid" class="store-badge"></a>
+<a href="https://github.com/wasi-master/wmkeyboard/releases/latest"><img src="/img/badges/github.png" alt="Get the APK from GitHub" class="store-badge"></a>
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/wasi-master/wmkeyboard"><img src="/img/badges/obtainium.png" alt="Get it on Obtainium" class="store-badge"></a>
 
 
 
@@ -30,7 +27,7 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 1. নিচের বাটনে ক্লিক করে বর্ণ অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন।
 2. বর্ণ অ্যাপের "Keyboard Layouts" মেনু থেকে "ক্ষিপ্র" সিলেক্ট করুন।
 
-[<img width="15%" alt="GetItOnGooglePlay" src="GetItOnGooglePlay_Badge_Web_color_English.width-1440.png"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
+[<img class="store-badge" alt="Get it on Google Play" src="/img/badges/play.svg"/>](https://play.google.com/store/apps/details?id=com.codepotro.borno.keyboard&pcampaignid=web_share)
 
 > [!WARNING]
 বর্ণতে ক্ষিপ্র এক ভার্শন পিছনে থাকতে পারে, যেহেতু ক্ষিপ্র-কে ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।  
@@ -48,8 +45,8 @@ WM কিবোর্ডের [অফিশিয়াল গিটহাব প�
 ২. স্পেস ছাড়া ব্যাকস্পেস চাপলে মাঝে মাঝে একাধিক কমিট হয়ে যায়, এটাও হেলিবোর্ড এর সমস্যা। এটা অতিসত্বর ফিক্স করা হবে।  
 ৩. এছাড়া হেলিবোর্ডের ক্ষিপ্র এক ভার্শন পিছনে থাকতে পারে। যেহেতু ক্ষিপ্র-কে প্রতিনিয়ত ইউজার ফিডব্যাক নিয়ে উন্নততর করা হচ্ছে।
 
-<a href="https://f-droid.org/packages/helium314.keyboard/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" width="15%"></a>
-<a href="https://github.com/HeliBorg/HeliBoard/releases/latest"><img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get the APK from GitHub" width="15%"></a>
+<a href="https://f-droid.org/packages/helium314.keyboard/"><img src="/img/badges/fdroid.png" alt="Get it on F-Droid" class="store-badge"></a>
+<a href="https://github.com/HeliBorg/HeliBoard/releases/latest"><img src="/img/badges/github.png" alt="Get the APK from GitHub" class="store-badge"></a>
 
 > [!NOTE]  
 ক্ষিপ্র-র টাচস্ক্রিনে অ্যাডাপ্টেশন গাইডলাইন মোতাবেক এই সকল কিবোর্ডে ক্ষিপ্র লেআউট যুক্ত করা হয়েছে। [গাইডলাইনটি দেখতে এখানে ক্লিক করুন](https://khipro.khiproteam.com/documentation/#tchshkrn-ojdptshnr-jnj-shjshn)।

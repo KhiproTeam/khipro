@@ -42,11 +42,9 @@
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
   padding: 1.3rem 1.4rem;
-  text-decoration: none;
   color: inherit;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
-  cursor: pointer;
 }
 
 .repo-card:hover {
@@ -97,6 +95,25 @@
 .repo-card__maintainer {
   font-size: 0.8rem;
   color: var(--color-text-secondary);
+}
+
+/* Separately clickable parts (issue #73): name -> repo, maintainer -> profile */
+.repo-card__name:hover,
+.repo-card__name:focus-visible {
+  text-decoration: underline;
+}
+
+.repo-card__maintainer-link {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-medium);
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.repo-card__maintainer-link:hover,
+.repo-card__maintainer-link:focus-visible {
+  color: var(--color-primary);
 }
 
 .repo-card__desc {
