@@ -1,0 +1,27 @@
+{{/* Resolve the theme on <html> before first paint so dark-mode users never
+       get a light flash on page navigation. Must stay inline in <head>,
+       before the stylesheets. Mirrors ThemeToggle in js/main.js. */}}
+<script>
+  (function () {
+    var pref = "system";
+    try {
+      var stored = localStorage.getItem("khipro-theme");
+      if (stored === "light" || stored === "dark" || stored === "system") {
+        pref = stored;
+      }
+    } catch (e) {
+      /* localStorage unavailable */
+    }
+    var actual = pref;
+    if (pref === "system") {
+      actual =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+    }
+    var root = document.documentElement;
+    root.setAttribute("data-theme", pref);
+    root.setAttribute("data-actual-theme", actual);
+  })();
+</script>
