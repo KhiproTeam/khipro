@@ -37,12 +37,12 @@ m17n-db --version
 2. যদি `Version 1.8.12` এর সমান কিংবা তার চেয়ে নতুন দেখায় তাহলে **ক্ষিপ্র বিল্ট-ইন** আছে; পরবর্তী ধাপে চলে যান।  
 কিন্তু পুরোনো ভার্শন হলে নিচের কমান্ড দিয়ে ক্ষিপ্র ডাউনলোড করতে হবে:
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/main/installer)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/KhiproTeam/khipro-installer/main/installer.sh)"
 ```
 > [!TIP] 
 > যদি আপনার সিস্টেমে আপনার administrator অ্যাকসেস থাকে তাহলে আপনি উপরের কমান্ডটি নিচের মতো sudo মোডেও রান করতে পারেন:
    ```bash
-   sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/main/installer)"
+   sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/KhiproTeam/khipro-installer/main/installer.sh)"
    ```
 
 ### রিফ্রেশ করা
@@ -135,7 +135,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/m
 - নতুন আপডেট এসে থাকলে উপরে দেওয়া ইনস্টলেশনের কমান্ডটি দিয়েই আপডেট করা যাবে।  
 আপনার সুবিধার্থে কমান্ডটি আরেকবার দেওয়া হলো:
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/main/installer)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/KhiproTeam/khipro-installer/main/installer.sh)"
 ```
 
 - এরপর, কম্পিউটার লগআউট করে লগইন করুন।
@@ -155,7 +155,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/m
 সেটা করার জন্যও উপরের ইনস্টলেশন কমান্ডটি রান করে `Install stable release from the main branch? (Y/n): ` জিজ্ঞেস করা হলে `n` দিন। এবং ব্রাঞ্চের নাম জিজ্ঞেস করলে যেই ব্রাঞ্চ থেকে ইনস্টল করতে চান সেই ব্রাঞ্চের নাম দিন।  
 আপনার সুবিধার্থে কমান্ডটি আরেকবার দেওয়া হলো:
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/main/installer)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/KhiproTeam/khipro-installer/main/installer.sh)"
 ```
 এই উপায়ে টেস্টিং ব্রাঞ্চ থেকে কিংবা অন্য কোনো ব্রাঞ্চ থেকে কোনো ঝামেলা ছাড়াই ইনস্টল করা যাবে।
 
@@ -168,7 +168,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/m
 স্ক্রিপ্টটি রান হবার সময় আনইনস্টলেশন মোড সিলেক্ট করতে হবে।  
 আপনার সুবিধার্থে কমান্ডটি আরেকবার দেওয়া হলো:
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/rank-coder/khipro-m17n/main/installer)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/KhiproTeam/khipro-installer/main/installer.sh)"
 ```
 
 কোনো প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন: [https://khipro.khiproteam.com/#community](https://khipro.khiproteam.com/#community)
